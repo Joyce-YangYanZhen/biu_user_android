@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activity.CollectionActivity">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/m64"
+            android:background="@drawable/daohanglan">
+
+        <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="28dp"
+                android:layout_height="@dimen/m18"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/m20"
+                android:layout_marginBottom="@dimen/m15"
+                android:src="@drawable/icon_back"/>
+
+        <TextView
+                android:id="@+id/title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/m10"
+                android:text="@string/tv219"
+                android:textColor="@color/top_heiziti"
+                android:textSize="@dimen/sp20"
+                android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="54dp"
+            android:layout_marginRight="54dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="32dp">
+
+        <RelativeLayout
+                android:id="@+id/zhanghu_message_layout"
+                android:layout_width="@dimen/m50"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            <LinearLayout android:layout_width="wrap_content"
+                          android:orientation="vertical"
+                          android:layout_centerHorizontal="true"
+                          android:layout_height="wrap_content">
+                <TextView
+                        android:id="@+id/tv1"
+                        android:layout_alignParentTop="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/tv220"
+                        android:textColor="@color/top_heiziti"
+                        android:textSize="@dimen/sp18"/>
+
+                <LinearLayout
+                        android:id="@+id/lin1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_height="3dp"
+                        android:visibility="invisible"
+                        android:background="@drawable/lin_draw"/>
+
+                <ImageView
+                        android:id="@+id/circle1"
+                        android:layout_width="@dimen/m7"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_height="@dimen/m7"
+                        android:visibility="gone"
+                        android:layout_marginRight="@dimen/m8"
+                        android:src="@drawable/circle_bg"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/system_message_layout"
+                android:layout_width="@dimen/m50"
+                android:layout_marginLeft="@dimen/m40"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            <LinearLayout android:layout_width="wrap_content"
+                          android:orientation="vertical"
+                          android:layout_centerHorizontal="true"
+                          android:layout_height="wrap_content">
+                <TextView
+                        android:id="@+id/tv2"
+                        android:layout_alignParentTop="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/tv221"
+                        android:textColor="@color/top_heiziti"
+                        android:textSize="@dimen/sp18"/>
+
+                <LinearLayout
+                        android:id="@+id/lin2"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:visibility="invisible"
+                        android:layout_height="3dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/lin_draw"/>
+
+                <ImageView
+                        android:id="@+id/circle2"
+                        android:layout_width="@dimen/m7"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/m8"
+                        android:visibility="gone"
+                        android:layout_alignParentTop="true"
+                        android:layout_height="@dimen/m7"
+                        android:src="@drawable/circle_bg"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+</LinearLayout>

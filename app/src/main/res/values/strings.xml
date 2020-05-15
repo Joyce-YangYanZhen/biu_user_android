@@ -1,0 +1,461 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name">哔呦</string>
+    <string name="setting">设置</string>
+
+    <string name="perm_tip">
+        当前应用缺少必要权限。\n请点击"设置"-"权限"-打开所需权限。\n最后点击两次后退按钮，即可返回。
+    </string>
+    <string name="ask_again">请给予应用必要权限，让程序可正常工作。</string>
+    <string name="cancel">取消</string>
+    <string name="mine">我的</string>
+    <string name="register">注册</string>
+    <string name="edit_hint1">请输入手机号</string>
+    <string name="edit_hint2">请输入密码</string>
+    <string name="edit_hint3">记住我</string>
+    <string name="edit_hint4">忘记密码</string>
+    <string name="edit_hint5">请输入验证码</string>
+    <string name="edit_hint6">请输入新密码</string>
+    <string name="edit_hint7">请再次确认密码</string>
+    <string name="edit_hint8">请输入场馆名称</string>
+    <string name="edit_hint9">请输入场馆面积</string>
+    <string name="edit_hint10">场馆电话</string>
+    <string name="edit_hint11">场馆邮箱</string>
+    <string name="edit_hint12">09:00</string>
+    <string name="edit_hint13">23:59</string>
+    <string name="edit_hint14">限制人数</string>
+    <string name="edit_hint15">请输入场馆地址</string>
+    <string name="edit_hint16">请输入法人姓名</string>
+    <string name="edit_hint17">请输入身份证号</string>
+    <string name="edit_hint18">请输入营业执照上的企业名称</string>
+    <string name="edit_hint19">请输入营业执照上的企业注册号</string>
+    <string name="edit_hint20">以上信息提交后不可更改</string>
+    <string name="edit_hint21">请输入课程名称</string>
+    <string name="edit_hint22">请输入限制人数</string>
+    <string name="edit_hint23">请输入课程详情</string>
+    <string name="edit_hint24">请输入适合人群</string>
+    <string name="edit_hint25">请输入注意事项</string>
+    <string name="edit_hint26">请提交您的拒绝原因:</string>
+    <string name="edit_hint27">姓名</string>
+    <string name="edit_hint28">手机号</string>
+    <string name="edit_hint29">职位</string>
+    <string name="edit_hint30">对现有功能不满意？有新的想法？快点告诉我们吧</string>
+    <string name="edit_hint31">请输入旧密码</string>
+    <string name="edit_hint32">请输入新密码</string>
+    <string name="edit_hint33">请再次确认密码</string>
+
+    <string name="tv1">登 录</string>
+    <string name="tv2">注册即代表您同意哔哟</string>
+    <string name="tv3">《用户隐私政策》</string>
+    <string name="tv4">确定</string>
+    <string name="tv5">忘记密码</string>
+    <string name="tv6">发送验证码</string>
+    <string name="tv7">角色选择</string>
+    <string name="tv8">馆主</string>
+    <string name="tv9">员工</string>
+    <string name="tv10">馆主资质</string>
+    <string name="tv11">为了更好的获取客户，及验证您的真实身份</string>
+    <string name="tv12">和核实场馆资质，需要您配合提交相关信</string>
+    <string name="tv13">息，我们会在24小时内为您审核</string>
+    <string name="tv14">提交审核资料</string>
+    <string name="tv15">员工资质</string>
+    <string name="tv16">您暂无权限！</string>
+    <string name="tv17">请联系您所在场馆并及时为您开通权限。</string>
+    <string name="tv18">基础资料</string>
+    <string name="tv19">名称</string>
+    <string name="tv20">类型</string>
+    <string name="tv21">面积</string>
+    <string name="tv22">电话</string>
+    <string name="tv23">邮箱</string>
+    <string name="tv24">营业时间</string>
+    <string name="tv25">人</string>
+    <string name="tv26">最多选择三项</string>
+    <string name="tv27">地址</string>
+    <string name="tv28">功能性场所</string>
+    <string name="tv29">LOGO</string>
+    <string name="tv30">更多照片</string>
+    <string name="tv31">0/9</string>
+    <string name="tv32">添加更多精彩照片，让用户更加了解你哦~</string>
+    <string name="tv33">营业设施</string>
+    <string name="tv34">下一步</string>
+    <string name="tv35">法人姓名</string>
+    <string name="tv36">身份证号</string>
+    <string name="tv37">企业名称</string>
+    <string name="tv38">企业注册号</string>
+    <string name="tv39">提 交</string>
+    <string name="tv40">提交成功</string>
+    <string name="tv41">我们会在24小时内为您审核，请您耐心等待</string>
+    <string name="tv42">月</string>
+    <string name="tv43">7/15</string>
+    <string name="tv44">用户端二维码</string>
+    <string name="tv45">将二维码放入框内，即可自动扫描</string>
+    <string name="tv46">有氧操房</string>
+    <string name="tv47">瑜伽</string>
+    <string name="tv48">单车房</string>
+    <string name="tv49">9:00</string>
+    <string name="tv50">提交审核</string>
+    <string name="tv51">审核失败!</string>
+    <string name="tv52">很抱歉，您提供的信息未能通过审核，请重新提交。</string>
+    <string name="tv53">重新提交</string>
+    <string name="tv54">课程名称:</string>
+    <string name="tv55">团操老师:</string>
+    <string name="tv56">课程房间:</string>
+    <string name="tv57">课程价格:</string>
+    <string name="tv58">人数限制:</string>
+    <string name="tv59">课程时间:</string>
+    <string name="tv60">课程介绍:</string>
+    <string name="tv61">注意事项:</string>
+    <string name="tv62">添加课程</string>
+    <string name="tv63">新增课程</string>
+    <string name="tv64">课程详情</string>
+    <string name="tv65">新增团课邀请</string>
+    <string name="tv66">团课名称</string>
+    <string name="tv67">团课类型</string>
+    <string name="tv68">训练目标</string>
+    <string name="tv69">训练难度</string>
+    <string name="tv70">团课房间</string>
+    <string name="tv71">团课人数</string>
+    <string name="tv72">课程时间</string>
+    <string name="tv73">课程循环</string>
+    <string name="tv74">课程介绍</string>
+    <string name="tv75">适合人群</string>
+    <string name="tv76">注意事项</string>
+    <string name="tv77">邀请团课老师</string>
+    <string name="tv78">团课老师详情</string>
+    <string name="tv79">已贴标签</string>
+    <string name="tv80">邀请</string>
+    <string name="tv81">课程价格</string>
+    <string name="tv82">最多只能邀请5个教练！</string>
+    <string name="tv83">私人教练 | 已服务时长：</string>
+    <string name="tv84">已贴标签</string>
+    <string name="tv85">消息</string>
+    <string name="tv86">账户消息</string>
+    <string name="tv87">系统消息</string>
+    <string name="tv88">用户消息</string>
+    <string name="tv89">场地申请</string>
+    <string name="tv90">拒绝</string>
+    <string name="tv91">同意</string>
+    <string name="tv92">已同意</string>
+    <string name="tv93">已拒绝</string>
+    <string name="tv94">提交成功！</string>
+    <string name="tv95">拒绝原因</string>
+    <string name="tv96">课程申请详情</string>
+    <string name="tv97">我的场馆</string>
+    <string name="tv98">账单余额</string>
+    <string name="tv99">权限管理</string>
+    <string name="tv100">高低时峰</string>
+    <string name="tv101">账号安全</string>
+    <string name="tv102">产品反馈</string>
+    <string name="tv103">关于</string>
+    <string name="tv104">权限管理</string>
+    <string name="tv105">角色管理</string>
+    <string name="tv106">教练绑定</string>
+    <string name="tv107">关于</string>
+    <string name="tv108">产品反馈</string>
+    <string name="tv109">选择问题类型(必填)</string>
+    <string name="tv110">产品建议 (功能建议/新的想法)</string>
+    <string name="tv111">故障反馈 (功能不可用)</string>
+    <string name="tv112">其他问题</string>
+    <string name="tv113">请输入问题描述 (必填，10个字以上)</string>
+    <string name="tv114">账号安全</string>
+    <string name="tv115">手机号</string>
+    <string name="tv116">修改密码</string>
+    <string name="tv117">退出登录</string>
+    <string name="tv118">修改密码</string>
+    <string name="tv119">场馆名称</string>
+    <string name="tv120">场馆类型</string>
+    <string name="tv121">基础信息</string>
+    <string name="tv122">营业设施</string>
+    <string name="tv123">完成</string>
+    <string name="tv124">高低时峰</string>
+    <string name="tv125">低峰时间段</string>
+    <string name="tv126">高峰时间段</string>
+    <string name="tv127">开启会员</string>
+    <string name="tv128">尊敬的 一二三场馆</string>
+    <string name="tv129">购买会员，您将享受哔哟为您提供的以下服务：</string>
+    <string name="tv130">试用7天</string>
+    <string name="tv131">购买会员</string>
+    <string name="tv132">时间表</string>
+    <string name="tv133">私教服务</string>
+    <string name="tv134">运动前</string>
+    <string name="tv135">运动后</string>
+    <string name="tv136">分享给</string>
+    <string name="tv137">biu一下，遇见自己</string>
+    <string name="tv138">这是我第20次在biu打卡啦，每次全力以赴都将成为我以后的见证！</string>
+    <string name="tv139">长按扫描识别二维码</string>
+    <string name="tv140">更多精彩课程等你来</string>
+    <string name="tv141">日志消息</string>
+    <string name="tv142">订单消息</string>
+    <string name="tv143">平台消息</string>
+    <string name="tv144">入场</string>
+    <string name="tv145">锻炼项目</string>
+    <string name="tv146">Exercise program</string>
+    <string name="tv147">授课老师</string>
+    <string name="tv148">teacher</string>
+    <string name="tv149">锻炼时间</string>
+    <string name="tv150">biu time</string>
+    <string name="tv151">锻炼地点</string>
+    <string name="tv152">place</string>
+    <string name="tv_room">锻炼房间</string>
+    <string name="tv_room_en">room</string>
+    <string name="tv153">现在心情如何？</string>
+    <string name="tv154">运动前</string>
+    <string name="tv155">点击记录一下运动前的心情，让教练更加了解你的身体情况，能更准确反馈你的训练日志哦～</string>
+    <string name="tv156">给今天的教练贴个标签吧！</string>
+    <string name="tv157">已获标签</string>
+    <string name="tv158">运动日志</string>
+    <string name="tv159">客服</string>
+    <string name="tv160">身体数据</string>
+    <string name="tv161">订单管理</string>
+    <string name="tv162">我的收藏</string>
+    <string name="tv163">建议反馈</string>
+    <string name="tv164">设置权限</string>
+    <string name="tv165">这里空空如也，不如去 biu 一下咯～</string>
+    <string name="tv167">运动日志</string>
+    <string name="tv168">日志详情</string>
+    <string name="tv169">课程信息</string>
+    <string name="tv170">锻炼课程:</string>
+    <string name="tv171">biu time:</string>
+    <string name="tv172">锻炼地点:</string>
+    <string name="tv173">心情记录</string>
+    <string name="tv174">运动前</string>
+    <string name="tv175">棒呆！好的心情有利于运动哟~</string>
+    <string name="tv176">点击记录</string>
+    <string name="tv177">每一次的心情记录都是对自己过往运动状态回顾</string>
+    <string name="tv178">体测数据</string>
+    <string name="tv179">身高cm</string>
+    <string name="tv180">体重kg</string>
+    <string name="tv181">% 体脂率%</string>
+    <string name="tv182">BMI</string>
+    <string name="tv183">腰臀比</string>
+    <string name="tv184">基础代谢 kcal</string>
+    <string name="tv185">课程内容</string>
+    <string name="tv186">平板支撑:</string>
+    <string name="tv187">杠铃卧推:</string>
+    <string name="tv188">前倾侧拉:</string>
+    <string name="tv189">获得标签</string>
+    <string name="tv190">确认删除日志？</string>
+    <string name="tv191">删除后将无法恢复，您确认要删除吗？</string>
+    <string name="tv192">身体数据</string>
+    <string name="tv193">基础信息</string>
+    <string name="tv194">身高 cm</string>
+    <string name="tv195">体重 kg</string>
+    <string name="tv196">进阶数据</string>
+    <string name="tv197">肌肉量 kg</string>
+    <string name="tv198">基础代谢 kcal</string>
+    <string name="tv199">保存</string>
+    <string name="tv200">体脂率 %</string>
+    <string name="tv201">全部</string>
+    <string name="tv202">待支付</string>
+    <string name="tv203">已支付</string>
+    <string name="tv204">订单管理</string>
+    <string name="tv205">取消订单</string>
+    <string name="tv206">实际应付金额</string>
+    <string name="tv207">权益优惠：</string>
+    <string name="tv208">共计：</string>
+    <string name="tv209">重新购买</string>
+    <string name="tv210">消息详情</string>
+    <string name="tv211">订单详情</string>
+    <string name="tv212">支付方式:</string>
+    <string name="tv213">订单编号:</string>
+    <string name="tv214">下单时间:</string>
+    <string name="tv215">删除订单</string>
+    <string name="tv216">确认取消订单？</string>
+    <string name="tv217">确认删除订单？</string>
+    <string name="tv218">拨打</string>
+    <string name="tv219">收藏</string>
+    <string name="tv220">场馆</string>
+    <string name="tv221">私教</string>
+    <string name="tv222">建议反馈</string>
+    <string name="tv223">木有搜索到相关内容哇~</string>
+    <string name="tv224">暂时没有消息提醒哟～</string>
+    <string name="tv225">心碎了，你还没有收藏哦~</string>
+    <string name="tv227">啊呀，你还没啥订单哦～</string>
+    <string name="tv226">首页逛逛</string>
+    <string name="tv228">新版本正在努力的更新中，请稍等</string>
+
+    <string name="tv_select">请选择</string>
+    <string name="select">选择</string>
+    <string name="tv_qianbao">钱包</string>
+    <string name="tv_money_details">收支明细</string>
+    <string name="tv_tixian">提现</string>
+    <string name="tv_tixian_money">提现金额</string>
+
+    <string name="alert_dialog_tishi1">温馨提示</string>
+    <string name="alert_dialog_tishi2">解绑银行卡</string>
+    <string name="alert_dialog_cached_cancel">取消</string>
+    <string name="alert_dialog_cached_ok">确认</string>
+    <string name="alert_dialog_tishi3">场馆名称不能为空！</string>
+    <string name="alert_dialog_tishi4">面积不能为空！</string>
+    <string name="alert_dialog_tishi5">电话不能为空！</string>
+    <string name="alert_dialog_tishi6">邮箱不能为空！</string>
+    <string name="alert_dialog_tishi7">地址不能为空！</string>
+    <string name="alert_dialog_tishi8">LOGO不能为空！</string>
+    <string name="alert_dialog_tishi9">照片不能为空！</string>
+    <string name="alert_dialog_tishi10">标签不能为空！</string>
+    <string name="alert_dialog_tishi11">功能性场所不能为空！</string>
+    <string name="alert_dialog_tishi12">法人信息不能为空！</string>
+    <string name="alert_dialog_tishi13">身份证不能为空！</string>
+    <string name="alert_dialog_tishi14">企业名字不能为空！</string>
+    <string name="alert_dialog_tishi15">企业注册号不能为空！</string>
+    <string name="alert_dialog_tishi16">团课名称不能为空！</string>
+    <string name="alert_dialog_tishi17">团课人数不能为空！</string>
+    <string name="alert_dialog_tishi18">课程介绍不能为空！</string>
+    <string name="alert_dialog_tishi19">适合人群不能为空！</string>
+    <string name="alert_dialog_tishi20">注意事项不能为空！</string>
+    <string name="alert_dialog_tishi21">不能超过最大人数！</string>
+    <string name="update_title">更新提示</string>
+    <string name="updatecontent">检测到有新版本，是否更新到最新版本。</string>
+    <string name="updatecontent2">检测到有新版本，请更新到最新版本，否则无法使用。</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--zxing-->
+    <string name="msg_camera_framework_bug">The camera is occupied or has no camera permission, please check</string>
+    <string name="button_ok">Exit</string>
+    <string name="scan_code">扫描二维码</string>
+    <string name="open_flash">打开闪关灯</string>
+    <string name="close_flash">关闭闪光灯</string>
+    <string name="gallery">相册</string>
+    <string name="scan_failed_tip">Scan image failed, please retry.</string>
+    <string name="tv_tixian_ok">确认提现</string>
+    <string name="tv_all_tixian">全部提现</string>
+    <string name="tv_now_tixian">立即提现</string>
+    <string name="tv_bill">账单</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="rationale_camera">This app needs access to your camera so you can take pictures.</string>
+    <string name="rationale_location_contacts">This app needs access to your location and contacts to know where and who
+        you are.
+    </string>
+    <string name="rationale_sms">This app needs access to your sms to read all your great messages.</string>
+    <string name="returned_from_app_settings_to_activity">
+        Returned from app settings to MainActivity with the following permissions:
+        \n\nCamera: %s
+        \nLocation &amp; Contacts: %s
+        \nSMS: %s
+    </string>
+    <string name="camera">Camera</string>
+    <string name="location_and_contacts">Location and Contacts</string>
+    <string name="sms">SMS</string>
+
+    <string name="tips_1">“出门打开手机就能搜到附近美食，长了肉我也很心痛”\n在哔呦，无论出差旅游搬家换工作，都能快速预定周边健身房，心痛不如行动。</string>
+    <string name="tips_2">“昨天问我的私教最擅长哪个领域，他说是销售” \n哔呦为每位教练设定星级成长系统，更有用户标签，帮你找到最合适的专业教练。</string>
+    <string name="tips_3">““你看那家烤肉店，好像在勾引我……” \n先来哔呦定一场明天的燃脂团课，让你的及时享乐不再有罪恶感～</string>
+    <string name="tv_login_tiaojian">登录注册即代表您已同意哔呦</string>
+    <string name="tips_quanyi">
+        亲爱的用户，\n 经验证，您还有以下未使用完的会籍时间及私教权益确认：
+    </string>
+    <string name="tips_ok">
+        点击确认，权益即可通过biu平台在此场馆继续使用剩余权益；\n如存在疑问，可线下联系该场馆，后续在我的-设置-权益确认页面中再次确认。
+    </string>
+    <string name="string_16">请输入不多于16个字符的昵称</string>
+
+    <string name="ms_app_name">Material Spinner</string>
+    <string name="cg_details">场馆详情</string>
+
+    <string name="tv_cg_private">场馆私教</string>
+    <string name="tv_cg_team">场馆团课</string>
+    <string name="tv_Pay">购买</string>
+    <string name="tv_all">全部</string>
+    <string name="tv_lg_pay">立即购买</string>
+    <string name="tv_cg_tips">购买场馆时间不包含私教和团课费用哦～</string>
+    <string name="tv_no_teamclass">啊哦，这里暂时没有团课哦～</string>
+    <string name="tv_cg_gongneng">场馆功能</string>
+
+    <string name="find">发现</string>
+    <string name="date_table">时间表</string>
+    <string name="message">消息</string>
+    <string name="my_info">我的</string>
+
+    <string name="search_history">搜索历史</string>
+    <string name="pay_quanyi">银联支付</string>
+    <string name="pay_weixin">微信支付</string>
+    <string name="pay_zhifubao">支付宝</string>
+
+    <string name="jump_map">跳转到</string>
+
+    <string name="private_details">教练详情</string>
+    <string name="tv_private_skill">教练技能</string>
+    <string name="tv_private_label">已获标签</string>
+    <string name="tv_class_look">查看</string>
+    <string name="tv_class_reserve">预约课程</string>
+    <string name="tv_select_class_time">选择课程时间</string>
+
+    <string name="team_details">团课详情</string>
+
+
+    <!--zhifubao-->
+    <string name="pay_with_alipay">支付宝支付 Demo</string>
+    <string name="pay_with_alipay_hk">HK 支付宝支付 Demo</string>
+    <string name="auth_with_alipay">支付宝授权 Demo</string>
+    <string name="web_to_native">网页支付转 native 支付 Demo</string>
+    <string name="check_sdk_version">支付宝 SDK 版本</string>
+    <string name="pay_success">支付成功:</string>
+    <string name="pay_failed">支付失败:</string>
+    <string name="auth_success">授权成功:</string>
+    <string name="auth_failed">授权失败:</string>
+    <string name="error_missing_appid_rsa_private">错误: 需要配置 PayDemoActivity 中的 APPID 和 RSA_PRIVATE</string>
+    <string name="error_missing_hk_partner_seller_rsa_private">错误：需要配置 OrderUtils1_0_HK 中的 PARTNER、SELLER 和
+        RSA_PRIVATE
+    </string>
+    <string name="pay_result">支付结果:</string>
+    <string name="error_auth_missing_partner_appid_rsa_private_target_id">错误: 需要配置PARTNER |APP_ID| RSA_PRIVATE|
+        TARGET_ID
+    </string>
+    <string name="alipay_sdk_version_is">支付宝 SDK 版本:</string>
+    <string name="confirm">确定</string>
+    <string name="error_missing_h5_pay_url">必须配置需要打开的url 站点，请在PayDemoActivity类的h5Pay中配置</string>
+    <string name="error">错误</string>
+    <string name="pay_cross_border">境外收单支付 Demo</string>
+    <string name="error_missing_global_partner_seller_rsa_private">错误：需要配置 OrderUtils1_0_Global 中的 PARTNER、SELLER 和
+        RSA_PRIVATE
+    </string>
+    <string name="payment_inst_hk">付款方: HK</string>
+    <string name="payment_inst_cn">付款方: CN</string>
+
+    <!--微信pay-->
+    <!-- PayActivity -->
+    <string name="app_tip">提示</string>
+    <string name="pay_by_wx">客户端签名微信支付</string>
+    <string name="pay_by_wxap">服务器端签名微信支付</string>
+    <string name="check_pay">检查微信版本是否支持支付</string>
+    <string name="input_reqkey">输入reqkey</string>
+    <string name="input_package_value">输入package value</string>
+    <string name="input_sign">输入sign</string>
+    <string name="getting_access_token">正在获取access token...</string>
+    <string name="get_access_token_succ">获取access token成功</string>
+    <string name="get_access_token_fail" formatted="false">获取access token失败，原因%s</string>
+    <string name="getting_prepayid">正在获取预支付订单...</string>
+    <string name="paying">支付中</string>
+    <string name="get_prepayid_succ">获取prepayid成功</string>
+    <string name="get_prepayid_fail" formatted="false">获取prepayid失败，原因%s</string>
+
+    <!-- WXPayEntryActivity -->
+    <string name="pay_result_tip">这个界面用于显示第三方app通过微信支付的结果</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+    <string name="setting_pwd">设置密码</string>
+    <string name="setting_sjh">修改手机号</string>
+    <string name="tv_risk">运动风险须知</string>
+    <string name="tv_xy">运动风险须知、协议与条款</string>
+    <string name="tv_quit">登出账户</string>
+    <string name="tv_ok">确认</string>
+    <string name="update_name_tips"><![CDATA[请输入2-16个字，不包含@<>/等无效字符]]></string>
+
+    <string name="exchange_txt_hint">
+        <Data>
+            <![CDATA[<font color="#b7b7b7" size="12sp"><b>登录注册即代表您已同意哔呦</b></font><font color="#6D7278" size="12sp"><b>《用户协议》</b></font><font color="#b7b7b7" size="12sp"><b>和</b></font></font><font color="#6D7278" size="12sp"><b>《《隐私政策》</b></font>]]></Data>
+    </string>
+    <string name="tv_welcome_ok">立即体验</string>
+    <string name="pay_ok">小呦提醒您：\n 场馆/团课服务开始前6h，私教服务开始前12h可以取消订单哦～</string>
+    <string name="pay_error">小呦提醒您：\n 支付异常！</string>
+
+
+    <string name="tv_pwd_tips">请输入6-18位同时包含字母、数字的密码</string>
+    <string name="tv_cg_price_tips">最低价格区间</string>
+    <string name="tv_price_exp">价格区间说明</string>
+    <string name="tv_1h">选择的时间不满1小时按1小时计算</string>
+    <string name="tv_high_price">分时段价格</string>
+    <string name="label_cg_price">门市价格</string>
+
+
+</resources>

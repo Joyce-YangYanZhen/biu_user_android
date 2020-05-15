@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <androidx.viewpager.widget.ViewPager
+            android:id="@+id/vp_guide"
+            android:layout_marginTop="@dimen/m30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/m400"/>
+
+    <ImageView
+            android:id="@+id/iv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/slices_tips_1"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/view"/>
+    <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tips_1"
+            android:layout_below="@+id/iv_2"
+            android:textSize="@dimen/sp12"
+            android:layout_marginTop="@dimen/m10"
+            android:layout_marginLeft="@dimen/m35"
+            android:layout_marginRight="@dimen/m30"
+            android:layout_marginBottom="@dimen/m40"/>
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_by"
+            android:src="@mipmap/by"
+
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/m103"
+            android:layout_toLeftOf="@+id/iv_dian"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/m8"
+            android:layout_marginLeft="@dimen/m8"
+            android:layout_marginRight="@dimen/m8"
+            android:id="@+id/iv_dian"
+            android:src="@mipmap/jiange"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/m103"
+
+            android:layout_toLeftOf="@+id/iv_cg"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_cg"
+            android:src="@mipmap/changguan"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/m103"
+
+            android:layout_marginRight="@dimen/m40"
+            android:layout_alignParentRight="true"/>
+    <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/m40"
+            android:layout_marginBottom="@dimen/m103"
+            android:orientation="horizontal" >
+
+        <ImageView
+                android:layout_width="@dimen/m30"
+                android:layout_height="@dimen/m30"
+                android:layout_gravity="center_vertical"
+                android:clickable="true"
+                android:padding="@dimen/m5"
+                android:src="@drawable/dot_selector" />
+
+        <ImageView
+                android:layout_width="@dimen/m30"
+                android:layout_height="@dimen/m30"
+                android:layout_gravity="center_vertical"
+                android:clickable="true"
+                android:padding="@dimen/m5"
+                android:src="@drawable/dot_selector" />
+
+        <ImageView
+                android:layout_width="@dimen/m30"
+                android:layout_height="@dimen/m30"
+                android:layout_gravity="center_vertical"
+                android:clickable="true"
+                android:padding="@dimen/m5"
+                android:src="@drawable/dot_selector" />
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/btn_login"
+            android:layout_width="160dp"
+            android:layout_height="42dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_bg"
+            android:layout_marginBottom="@dimen/m21"
+            android:gravity="center"
+            android:text="立即体验"
+            android:textColor="@color/btn_text_color"
+            android:textSize="@dimen/sp18"
+            android:visibility="gone"/>
+
+
+</RelativeLayout>

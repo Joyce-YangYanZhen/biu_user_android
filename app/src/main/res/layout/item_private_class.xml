@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/m40"
+            android:gravity="bottom">
+        <CheckBox
+                android:id="@+id/cb_class_select"
+                android:layout_width="@dimen/m22"
+                android:layout_height="@dimen/m22"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/m30"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/btn_checkbox"
+                android:button="@null"
+                android:checked="false"/>
+
+        <TextView
+                android:id="@+id/tv_class_name"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/m20"
+                android:text="ssssss"
+                android:layout_marginLeft="@dimen/m5"
+                android:textColor="@color/color_4A4A4A"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/cb_class_select"
+                android:layout_toLeftOf="@+id/iv_class_time"
+                android:textSize="@dimen/sp15"/>
+
+        <ImageView
+                android:id="@+id/iv_class_time"
+                android:layout_width="@dimen/m15"
+                android:layout_height="@dimen/m17"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/tv_class_look"
+                android:layout_marginRight="@dimen/m30"
+                android:src="@drawable/time_select"/>
+
+        <TextView
+                android:id="@+id/tv_class_look"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_height="@dimen/m20"
+                android:layout_marginRight="@dimen/m30"
+                android:text="@string/tv_class_look"
+                android:textSize="@dimen/sp13"
+                android:textColor="@color/btn_text_color"
+                android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+
+    <TextView
+            android:id="@+id/tv_select_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时间"
+            android:layout_marginTop="@dimen/m5"
+            android:layout_marginLeft="@dimen/m52"
+            android:textSize="@dimen/sp13"
+            android:visibility="gone"
+            android:layout_marginBottom="@dimen/m10"
+            android:textColor="@color/color_4A4A4A"/>
+</LinearLayout>

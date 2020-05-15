@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="abc_action_bar_content_inset_material">24dp</dimen>
+    <dimen name="abc_action_bar_content_inset_with_nav">80dp</dimen>
+    <dimen name="abc_action_bar_default_height_material">64dp</dimen>
+    <dimen name="abc_action_bar_default_padding_end_material">8dp</dimen>
+    <dimen name="abc_action_bar_default_padding_start_material">8dp</dimen>
+    <dimen name="abc_config_prefDialogWidth">580dp</dimen>
+    <dimen name="abc_text_size_subtitle_material_toolbar">16dp</dimen>
+    <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
+    <dimen name="design_navigation_max_width">320dp</dimen>
+    <dimen name="design_snackbar_action_inline_max_width">0dp</dimen>
+    <dimen name="design_snackbar_background_corner_radius">2dp</dimen>
+    <dimen name="design_snackbar_extra_spacing_horizontal">24dp</dimen>
+    <dimen name="design_snackbar_max_width">576dp</dimen>
+    <dimen name="design_snackbar_min_width">320dp</dimen>
+    <dimen name="design_snackbar_padding_vertical_2lines">@dimen/design_snackbar_padding_vertical
+  </dimen>
+    <dimen name="design_tab_scrollable_min_width">160dp</dimen>
+    <integer name="design_snackbar_text_max_lines">1</integer>
+    <style name="Widget.Design.TabLayout" parent="Base.Widget.Design.TabLayout">
+    <item name="tabGravity">center</item>
+    <item name="tabMode">fixed</item>
+  </style>
+    <declare-styleable name="CCRImageView">
+        <!-- 默认图片资源，默认值为 null -->
+        <attr name="android:src"/>
+        <!-- 是否是圆形，默认值为 false -->
+        <attr format="boolean" name="bga_iv_circle"/>
+        <!-- 圆角矩形的半径，默认值为 0dp -->
+        <attr format="reference|dimension" name="bga_iv_cornerRadius"/>
+        <!-- 是否是矩形，默认值为 false -->
+        <attr format="boolean" name="bga_iv_square"/>
+        <!-- 描边的宽度，默认值为 0dp -->
+        <attr format="reference|dimension" name="bga_iv_borderWidth"/>
+        <!-- 描边的颜色，默认值为 Color.WHITE -->
+        <attr format="reference|color" name="bga_iv_borderColor"/>
+    </declare-styleable>
+    <declare-styleable name="CCRNinePhotoLayout">
+        <!-- Item 条目圆角尺寸，默认值为 0dp -->
+        <attr format="dimension|reference" name="bga_npl_itemCornerRadius"/>
+        <!-- 当只有一张图片时，是否显示成大图，默认值为 true -->
+        <attr format="boolean" name="bga_npl_showAsLargeWhenOnlyOne"/>
+        <!-- Item 间的水平和垂直间距，默认值为 4dp -->
+        <attr format="dimension|reference" name="bga_npl_itemWhiteSpacing"/>
+        <!-- 出去九宫格部分的空白区域的尺寸，默认值为 100dp -->
+        <attr format="dimension|reference" name="bga_npl_otherWhiteSpacing"/>
+        <!-- 占位图资源，默认值为 R.mipmap.bga_pp_ic_holder_light -->
+        <attr format="reference" name="bga_npl_placeholderDrawable"/>
+        <!-- item 的尺寸，优先级高于 bga_npl_otherWhiteSpacing，默认值为 0dp -->
+        <attr format="dimension|reference" name="bga_npl_itemWidth"/>
+        <!-- 列数,默认值为 3，当该值大于 3 并且数据源里只有四张图片时不会显示成 2 列 -->
+        <attr format="integer" name="bga_npl_itemSpanCount"/>
+    </declare-styleable>
+    <declare-styleable name="CCRSortableNinePhotoLayout">
+        <!-- 是否显示加号，默认值为 true -->
+        <attr format="boolean" name="bga_snpl_plusEnable"/>
+        <!-- 是否可拖拽排序，默认值为 true -->
+        <attr format="boolean" name="bga_snpl_sortable"/>
+        <!-- 删除按钮图片，默认值为 R.mipmap.bga_pp_ic_delete -->
+        <attr format="reference" name="bga_snpl_deleteDrawable"/>
+        <!-- 可选择图片的总张数,默认值为 9 -->
+        <attr format="integer" name="bga_snpl_maxItemCount"/>
+        <!-- 列数,默认值为 3 -->
+        <attr format="integer" name="bga_snpl_itemSpanCount"/>
+        <!-- 删除按钮是否重叠四分之一，默认值为 false -->
+        <attr format="boolean" name="bga_snpl_deleteDrawableOverlapQuarter"/>
+        <!-- 添加按钮图片，默认值为 R.mipmap.bga_pp_ic_plus -->
+        <attr format="reference" name="bga_snpl_plusDrawable"/>
+        <!-- Item 条目圆角尺寸，默认值为 0dp -->
+        <attr format="dimension|reference" name="bga_snpl_itemCornerRadius"/>
+        <!-- Item 间的水平和垂直间距，默认值为 4dp -->
+        <attr format="dimension|reference" name="bga_snpl_itemWhiteSpacing"/>
+        <!-- 出去九宫格部分的空白区域的尺寸，默认值为 100dp -->
+        <attr format="dimension|reference" name="bga_snpl_otherWhiteSpacing"/>
+        <!-- 占位图资源，默认值为 R.mipmap.bga_pp_ic_holder_light -->
+        <attr format="reference" name="bga_snpl_placeholderDrawable"/>
+        <!-- 是否可编辑，默认值为 true -->
+        <attr format="boolean" name="bga_snpl_editable"/>
+        <!-- item 的尺寸，大于 0dp 时优先级高于 bga_snpl_otherWhiteSpacing，默认值为 0dp -->
+        <attr format="dimension|reference" name="bga_snpl_itemWidth"/>
+    </declare-styleable>
+</resources>

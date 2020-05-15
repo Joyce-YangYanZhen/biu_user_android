@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="权益确认"
+            android:textSize="@dimen/sp20"
+            android:textColor="@color/text_color_def"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="@dimen/m40"
+            android:layout_marginLeft="@dimen/m20"
+            />
+    <TextView
+            android:id="@+id/tv_jump"
+            android:layout_width="wrap_content"
+            android:minWidth="@dimen/m61"
+            android:gravity="center"
+            android:layout_height="@dimen/m24"
+            android:text="跳过"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/m40"
+            android:textColor="@color/color_6D7278"
+            android:layout_marginRight="@dimen/m20"
+            android:background="@drawable/button_shape"/>
+
+    <TextView
+            android:layout_below="@+id/tv_jump"
+            android:id="@+id/tv_dear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/contents_text"
+            android:textSize="@dimen/sp18"
+            android:layout_marginLeft="@dimen/m15"
+            android:layout_marginRight="@dimen/m15"
+            android:layout_marginTop="@dimen/m25"
+            android:text="@string/tips_quanyi"/>
+    <TextView
+            android:layout_below="@+id/tv_dear"
+            android:id="@+id/tv_tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/m15"
+            android:layout_marginRight="@dimen/m15"
+            android:layout_marginTop="@dimen/m10"
+            android:textSize="@dimen/sp12"
+            android:textColor="@color/color_7E7E7E"
+            android:text="@string/tips_ok"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@+id/tv_tips"
+            android:id="@+id/rv_view"
+            android:layout_marginTop="@dimen/m10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>

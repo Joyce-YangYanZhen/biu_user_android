@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+        android:gravity="center_vertical">
+
+    <LinearLayout
+            android:id="@+id/lin1"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content">
+          <ImageView
+                android:layout_width="212dp"
+                android:src="@drawable/dingdan_img"
+                android:layout_height="176dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp13"
+                android:text="@string/tv227"
+                android:textColor="@color/color_6D7278"
+                />
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/qushouye_btn"
+            android:layout_below="@+id/lin1"
+            android:layout_width="@dimen/m167"
+            android:layout_marginTop="@dimen/m89"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:background="@drawable/lin_bg1"
+            android:gravity="center"
+            android:layout_height="@dimen/m70">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:textSize="@dimen/sp20"
+                  android:textColor="@color/color_6D7278"
+                  android:text="@string/tv226"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

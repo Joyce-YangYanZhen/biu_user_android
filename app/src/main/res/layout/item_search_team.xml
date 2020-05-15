@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:minHeight="@dimen/m60"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_team"
+                android:gravity="center_vertical">
+
+    <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="这是标题"
+            android:textColor="@color/contents_text"
+            android:textSize="@dimen/sp15"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/tv_juli"
+            android:layout_marginLeft="@dimen/m30"/>
+
+    <TextView
+            android:id="@+id/tv_address"
+            android:layout_below="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/m8"
+            android:layout_marginLeft="@dimen/m30"
+            android:textSize="@dimen/sp13"
+            android:textColor="@color/color_6D7278"
+            android:text="这是地址"/>
+
+    <TextView
+            android:id="@+id/tv_juli"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            android:text="这是距离"
+            android:layout_marginRight="@dimen/m30"
+            android:textSize="@dimen/sp13"
+            android:textColor="@color/color_6D7278"/>
+</RelativeLayout>

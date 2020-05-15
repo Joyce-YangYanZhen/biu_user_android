@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<www.linwg.org.lib.LCardView xmlns:android="http://schemas.android.com/apk/res/android"
+                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                             xmlns:tools="http://schemas.android.com/tools"
+                             android:id="@+id/clander_layout"
+                             android:layout_width="@dimen/m311"
+                             android:layout_height="wrap_content"
+                             android:layout_gravity="center"
+                             android:gravity="center"
+                             android:orientation="vertical"
+                             app:cornerRadius="@dimen/m8"
+                             app:shadowSize="@dimen/m2"
+                             app:shadowStartAlpha="10">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/pop_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/m24"
+            android:text="@string/tv176"
+            android:textColor="@color/color_000000"
+            android:textSize="@dimen/sp18" />
+
+        <TextView
+            android:id="@+id/pop_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/m19"
+            android:layout_marginTop="@dimen/m10"
+            android:layout_marginRight="@dimen/m19"
+            android:gravity="left"
+            tools:text="@string/tv177"
+            android:textColor="@color/color_4A4A4A"
+            android:textSize="@dimen/sp13" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/m30"
+            android:layout_marginBottom="@dimen/m26">
+
+
+            <LinearLayout
+                android:id="@+id/cancel_btn"
+                android:layout_width="@dimen/m86"
+                android:layout_height="@dimen/m30"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/m44"
+                android:layout_marginRight="@dimen/m61"
+                android:background="@drawable/button_shape_40"
+                android:gravity="center">
+
+                <TextView
+                        android:id="@+id/cancel_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="取消"
+                    android:textColor="@color/btn_text_color"
+                    android:textSize="@dimen/sp15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sure_btn"
+                android:layout_width="@dimen/m86"
+                android:layout_height="@dimen/m30"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/m44"
+                android:background="@drawable/shape_btn_bg_40"
+                android:gravity="center">
+
+                <TextView
+                        android:id="@+id/sure_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="确认"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp15" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</www.linwg.org.lib.LCardView>

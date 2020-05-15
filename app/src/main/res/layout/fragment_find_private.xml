@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/m21">
+
+            <FrameLayout
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/m27"
+                    android:layout_marginLeft="@dimen/m21"
+                    android:background="@drawable/shape_btn_bg_gray">
+
+                <TextView
+                        android:id="@+id/private_class"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/m27"
+                        android:text="擅长课程"
+                        android:textColor="@color/color_6D7278"
+                        android:gravity="start|center_vertical"
+                        android:layout_marginLeft="@dimen/m12"
+                        android:textSize="@dimen/sp15"/>
+
+                <ImageView
+                        android:layout_width="@dimen/m14"
+                        android:layout_height="@dimen/m8"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginRight="@dimen/m12"
+                        android:src="@drawable/xiala_1" />
+            </FrameLayout>
+
+            <FrameLayout
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/m27"
+                    android:layout_marginLeft="@dimen/m10"
+                    android:background="@drawable/shape_btn_bg_gray">
+
+                <TextView
+                        android:id="@+id/private_year"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/m27"
+                        android:text="从业年限"
+                        android:textColor="@color/color_6D7278"
+                        android:gravity="start|center_vertical"
+                        android:layout_marginLeft="@dimen/m12"
+                        android:textSize="@dimen/sp15"/>
+
+                <ImageView
+                        android:layout_width="@dimen/m14"
+                        android:layout_height="@dimen/m8"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginRight="@dimen/m12"
+                        android:src="@drawable/xiala_1" />
+            </FrameLayout>
+
+            <FrameLayout
+                    android:layout_weight="1.5"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/m27"
+                    android:layout_marginLeft="@dimen/m10"
+                    android:layout_marginRight="@dimen/m22"
+                    android:background="@drawable/shape_btn_bg_gray">
+                <TextView
+                        android:id="@+id/private_sex"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/m27"
+                        android:text="性别"
+                        android:textColor="@color/color_6D7278"
+                        android:gravity="start|center_vertical"
+                        android:layout_marginLeft="@dimen/m12"
+                        android:textSize="@dimen/sp15"/>
+
+                <ImageView
+                        android:layout_width="@dimen/m14"
+                        android:layout_height="@dimen/m8"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginRight="@dimen/m12"
+                        android:src="@drawable/xiala_1" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/tv_private_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="共0位私教"
+                android:textColor="@color/contents_text"
+                android:textSize="@dimen/sp15"
+                android:layout_marginTop="@dimen/m10"
+                android:layout_marginLeft="@dimen/m20"/>
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                android:id="@+id/xrefreshview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    </LinearLayout>
+    <ImageView
+            android:id="@+id/iv_to_top"
+            android:layout_width="@dimen/m18"
+            android:layout_height="@dimen/m21"
+            android:src="@drawable/to_top"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="@dimen/m16"
+            android:layout_marginBottom="@dimen/m5"/>
+</FrameLayout>

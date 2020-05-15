@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="640dp">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/m60"
+                android:layout_marginTop="@dimen/m20">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="选择一个锻炼场馆"
+                        android:layout_gravity="center"
+                        android:textColor="@color/contents_text"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/sp20"/>
+                <ImageView
+                        android:id="@+id/iv_back"
+                        android:layout_width="@dimen/m17"
+                        android:layout_height="@dimen/m17"
+                        android:layout_gravity="right|center_vertical"
+                        android:src="@drawable/deleted_edit"
+                        android:layout_marginRight="@dimen/m30"/>
+        </FrameLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <FrameLayout
+                    android:layout_width="117dp"
+                    android:layout_height="@dimen/m27"
+                    android:layout_marginLeft="@dimen/m34"
+                    android:layout_marginRight="@dimen/m15"
+                    android:background="@drawable/shape_btn_bg_gray">
+
+                <TextView
+                        android:id="@+id/main_occupation"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/m27"
+                        android:text="场馆类型"
+                        android:gravity="center"
+                        android:textSize="@dimen/sp15"/>
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center_vertical"
+                        android:contentDescription="@string/ms_app_name"
+                        android:src="@drawable/ms_ic_arrow_down_24dp" />
+            </FrameLayout>
+
+            <TextView
+                    android:id="@+id/tv_pingfen"
+
+                    android:layout_width="74dp"
+                    android:layout_height="@dimen/m27"
+                    android:background="@drawable/shape_btn_bg_gray"
+                    android:text="评分"
+                    android:gravity="center"
+                    android:textColor="@color/color_6D7278"
+                    android:textSize="@dimen/sp15"
+                    android:layout_marginRight="@dimen/m15"/>
+            <TextView
+                    android:id="@+id/tv_yongchi"
+                    android:layout_width="74dp"
+                    android:gravity="center"
+                    android:textColor="@color/color_6D7278"
+                    android:textSize="@dimen/sp15"
+                    android:layout_height="@dimen/m27"
+                    android:background="@drawable/shape_btn_bg_gray"
+                    android:layout_marginRight="@dimen/m34"
+                    android:text="泳池"/>
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/tv_cg_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="共0家场馆"
+                android:textColor="@color/contents_text"
+                android:textSize="@dimen/sp15"
+                android:layout_marginTop="@dimen/m10"
+                android:layout_marginLeft="@dimen/m20"/>
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                android:id="@+id/refresh_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rv_bg">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    </LinearLayout>
+    <ImageView
+            android:id="@+id/iv_to_top"
+            android:layout_width="@dimen/m18"
+            android:layout_height="@dimen/m21"
+            android:src="@drawable/to_top"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="@dimen/m16"
+            android:layout_marginBottom="@dimen/m5"/>
+</FrameLayout>

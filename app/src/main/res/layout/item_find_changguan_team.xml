@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+                android:id="@+id/rl_team"
+        android:layout_marginTop="@dimen/m20">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_head"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="@dimen/m20"
+                android:layout_marginTop="@dimen/m10"
+                android:src="@mipmap/ic_launcher"/>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toRightOf="@+id/iv_head"
+                android:layout_marginRight="@dimen/m100"
+                android:layout_marginLeft="@dimen/m20"
+                android:layout_marginTop="@dimen/m5">
+            <TextView
+                    android:id="@+id/tv_team_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/contents_text"
+                    android:textSize="@dimen/sp15"
+                    android:text="燃脂骑行·动感单车"/>
+            <TextView
+                    android:id="@+id/tv_team_timeAndTeacher"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/contents_text"
+                    android:textSize="@dimen/sp15"
+                    android:layout_marginTop="@dimen/m13"
+                    android:text="张三  12:00-13:20张三  12:00-13:20张三  12:00-13:20张三  12:00-13:20张三  12:00-13:20"/>
+        </LinearLayout>
+        <TextView
+                android:id="@+id/tv_team_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp20"
+                android:textColor="@color/contents_text"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/m20"
+                android:text="¥45"/>
+    <TextView
+            android:id="@+id/tv_team_pay"
+            android:layout_width="@dimen/m84"
+            android:layout_height="@dimen/m48"
+            android:textSize="@dimen/sp15"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/m5"
+            android:layout_below="@+id/tv_team_price"
+            android:textColor="@color/white"
+            android:background="@drawable/pay_2"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/m10"
+            android:text="@string/tv_Pay"/>
+
+</RelativeLayout>

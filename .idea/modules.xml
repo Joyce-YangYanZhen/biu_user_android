@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/LoadManager/LoadManager.iml" filepath="$PROJECT_DIR$/LoadManager/LoadManager.iml" group="biu_user_android/LoadManager" />
+      <module fileurl="file://$PROJECT_DIR$/Popup/Popup.iml" filepath="$PROJECT_DIR$/Popup/Popup.iml" group="biu_user_android/Popup" />
+      <module fileurl="file://$PROJECT_DIR$/WheelPicker/WheelPicker.iml" filepath="$PROJECT_DIR$/WheelPicker/WheelPicker.iml" group="biu_user_android/WheelPicker" />
+      <module fileurl="file://$PROJECT_DIR$/WheelView/WheelView.iml" filepath="$PROJECT_DIR$/WheelView/WheelView.iml" group="biu_user_android/WheelView" />
+      <module fileurl="file://$PROJECT_DIR$/XrefreshLibrary/XrefreshLibrary.iml" filepath="$PROJECT_DIR$/XrefreshLibrary/XrefreshLibrary.iml" group="biu_user_android/XrefreshLibrary" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="biu_user_android/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/biu_user_android.iml" filepath="$PROJECT_DIR$/.idea/biu_user_android.iml" group="biu_user_android" />
+      <module fileurl="file://$PROJECT_DIR$/calendarview/calendarview.iml" filepath="$PROJECT_DIR$/calendarview/calendarview.iml" group="biu_user_android/calendarview" />
+      <module fileurl="file://$PROJECT_DIR$/datepicker/datepicker.iml" filepath="$PROJECT_DIR$/datepicker/datepicker.iml" group="biu_user_android/datepicker" />
+      <module fileurl="file://$PROJECT_DIR$/easyPhotos/easyPhotos.iml" filepath="$PROJECT_DIR$/easyPhotos/easyPhotos.iml" group="biu_user_android/easyPhotos" />
+      <module fileurl="file://$PROJECT_DIR$/libbannerandroidx/libbannerandroidx.iml" filepath="$PROJECT_DIR$/libbannerandroidx/libbannerandroidx.iml" group="biu_user_android/libbannerandroidx" />
+      <module fileurl="file://$PROJECT_DIR$/okhttputils/okhttputils.iml" filepath="$PROJECT_DIR$/okhttputils/okhttputils.iml" group="biu_user_android/okhttputils" />
+      <module fileurl="file://$PROJECT_DIR$/spinner_lib/spinner_lib.iml" filepath="$PROJECT_DIR$/spinner_lib/spinner_lib.iml" group="biu_user_android/spinner_lib" />
+      <module fileurl="file://$PROJECT_DIR$/timelinelibrary/timelinelibrary.iml" filepath="$PROJECT_DIR$/timelinelibrary/timelinelibrary.iml" group="biu_user_android/timelinelibrary" />
+      <module fileurl="file://$PROJECT_DIR$/updatelib/updatelib.iml" filepath="$PROJECT_DIR$/updatelib/updatelib.iml" group="biu_user_android/updatelib" />
+      <module fileurl="file://$PROJECT_DIR$/viewpagerindicator/viewpagerindicator.iml" filepath="$PROJECT_DIR$/viewpagerindicator/viewpagerindicator.iml" group="biu_user_android/viewpagerindicator" />
+      <module fileurl="file://$PROJECT_DIR$/zzsecondarylinkage/zzsecondarylinkage.iml" filepath="$PROJECT_DIR$/zzsecondarylinkage/zzsecondarylinkage.iml" group="biu_user_android/zzsecondarylinkage" />
+    </modules>
+  </component>
+</project>

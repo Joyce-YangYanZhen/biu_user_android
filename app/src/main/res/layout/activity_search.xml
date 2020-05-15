@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activity.SearchActivity">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/m70"
+            android:layout_marginTop="@dimen/m10"
+            android:layout_gravity="center_vertical">
+        <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="28dp"
+                android:layout_height="@dimen/m18"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/m20"
+                android:src="@drawable/back"/>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_toRightOf="@+id/back_btn"
+                android:layout_height="@dimen/m40"
+                android:layout_marginRight="@dimen/m10"
+                android:layout_marginLeft="@dimen/m16"
+                android:background="@drawable/edit_bg"
+                android:layout_centerVertical="true">
+
+            <LinearLayout
+                    android:id="@+id/ff_select_type"
+                    android:layout_width="@dimen/m76"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:background="@drawable/shape_btn_bg_gray"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_alignParentLeft="true">
+
+                <TextView
+                        android:id="@+id/private_year"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="场馆"
+                        android:textColor="@color/color_4A4A4A"
+                        android:gravity="center"
+                        android:textSize="@dimen/sp15"/>
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center_vertical"
+                        android:contentDescription="@string/ms_app_name"
+                        android:src="@drawable/ms_ic_arrow_down_24dp"/>
+            </LinearLayout>
+            <View
+                    android:layout_width="@dimen/m1"
+                    android:layout_height="@dimen/m30"
+                    android:layout_marginTop="@dimen/m3"
+                    android:layout_toRightOf="@+id/ff_select_type"
+                    android:background="@color/color_979797"/>
+            <EditText
+                    android:id="@+id/edit_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/m40"
+                    android:hint="搜索你想要的"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/sp13"
+                    android:paddingLeft="@dimen/m10"
+                    android:paddingRight="@dimen/m10"
+                    android:layout_toRightOf="@+id/ff_select_type"
+                    android:drawableLeft="@drawable/search"
+                    android:drawablePadding="@dimen/m10"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:imeOptions="actionSearch"
+                    android:textColor="@color/contents_text"
+                    android:background="@null"/>
+
+            <ImageView
+                    android:id="@+id/iv_delete_edit"
+                    android:layout_width="@dimen/m16"
+                    android:layout_height="@dimen/m16"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/m20"
+                    android:src="@drawable/deleted_edit"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <FrameLayout
+            android:id="@+id/ll_search_history"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:orientation="vertical">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/search_history"
+                    android:textSize="@dimen/sp18"
+                    android:textColor="@color/color_6D7278"
+                    android:layout_marginTop="@dimen/m43"
+                    android:layout_marginLeft="@dimen/m20"/>
+            <com.noplugins.keepfit.userplatform.util.ui.ZFlowLayout
+                    android:id="@+id/fl_search_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/m15"
+                    android:layout_marginRight="@dimen/m15"
+                    android:orientation="vertical" />
+        </LinearLayout>
+
+
+        <ImageView
+                android:id="@+id/iv_delete_all"
+                android:layout_width="@dimen/m30"
+                android:layout_height="@dimen/m30"
+                android:src="@drawable/deleted_all"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="@dimen/m40"/>
+    </FrameLayout>
+    <com.andview.refreshview.XRefreshView
+            android:id="@+id/xrefreshview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_search_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+        </androidx.recyclerview.widget.RecyclerView>
+        <!--<com.noplugins.keepfit.userplatform.util.ui.RecyclerViewEmptySupport-->
+                <!--android:id="@+id/rv_search_list"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent">-->
+
+        <!--</com.noplugins.keepfit.userplatform.util.ui.RecyclerViewEmptySupport>-->
+    </com.andview.refreshview.XRefreshView>
+
+
+
+</LinearLayout>

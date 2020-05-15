@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:minHeight="@dimen/m60"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_private"
+                android:gravity="center_vertical">
+
+    <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginLeft="@dimen/m30"/>
+
+    <TextView
+            android:id="@+id/tv_address"
+            android:layout_toRightOf="@+id/iv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/m8"
+            android:textColor="@color/contents_text"
+            android:textSize="@dimen/sp13"
+            android:text="这是地址"/>
+
+    <TextView
+            android:id="@+id/tv_juli"
+            android:layout_toRightOf="@+id/iv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/m8"
+            android:layout_marginTop="@dimen/m8"
+            android:layout_below="@+id/tv_address"
+            android:text="这是距离"/>
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activity.MessageDetailActivity">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/m64"
+            android:background="@drawable/daohanglan">
+
+        <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="28dp"
+                android:layout_height="@dimen/m18"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/m20"
+                android:layout_marginBottom="@dimen/m15"
+                android:src="@drawable/icon_back"/>
+
+        <TextView
+                android:id="@+id/title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/m10"
+                android:text="@string/tv210"
+                android:textColor="@color/top_heiziti"
+                android:textSize="@dimen/sp20"
+                android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/m20"
+                android:layout_marginTop="@dimen/m20"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:id="@+id/icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/yugou_icon"
+                    />
+
+            <TextView
+                    android:id="@+id/message_title"
+                    android:layout_toRightOf="@+id/icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp15"
+                    android:layout_marginLeft="@dimen/m10"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/top_heiziti"
+                    android:text="【平台消息】"
+                    />
+
+            <TextView
+                    android:id="@+id/time_tv"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/m20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_9B9B9B"
+                    android:textSize="@dimen/sp12"
+                    android:text="2019-03-01"
+                    />
+        </RelativeLayout>
+
+        <TextView
+                android:id="@+id/content_tv"
+                android:layout_marginTop="@dimen/m20"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/m20"
+                android:layout_marginRight="@dimen/m20"
+                android:textSize="@dimen/sp13"
+                android:textColor="@color/color_4A4A4A"
+                android:layout_marginBottom="@dimen/m20"
+                android:text="亲爱的用户，我们将于2019年7月6日23:00-24:00时间段进行系统升级维护，此时间段内平台将暂停服务，给您带来的不便请您谅解～"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+</LinearLayout>

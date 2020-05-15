@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+        android:gravity="center">
+
+    <LinearLayout
+            android:layout_width="@dimen/m321"
+            android:background="@drawable/to_phone"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_height="@dimen/m204">
+
+        <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="支付成功！"
+                android:layout_marginTop="@dimen/m20"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/contents_text"
+                android:textSize="@dimen/sp18"
+                />
+
+        <TextView
+                android:id="@+id/tv_pay_ok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pay_ok"
+                android:layout_marginTop="@dimen/m15"
+                android:layout_marginLeft="@dimen/m20"
+                android:layout_marginRight="@dimen/m20"
+                android:textColor="@color/color_4A4A4A"
+                android:textSize="@dimen/sp15"
+                />
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/m20">
+
+            <TextView
+                    android:id="@+id/dismiss_tv"
+                    android:layout_width="@dimen/m86"
+                    android:layout_height="@dimen/m36"
+                    android:textSize="@dimen/sp15"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:textColor="@color/btn_text_color"
+                    android:background="@drawable/button_shape_40"
+                    android:text="返回首页"
+                    android:layout_marginRight="@dimen/m30"
+                    />
+
+            <TextView
+                    android:id="@+id/phone_tv"
+                    android:layout_width="@dimen/m86"
+                    android:layout_height="@dimen/m36"
+                    android:textSize="@dimen/sp15"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/m30"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/white"
+                    android:background="@drawable/shape_btn_bg_40"
+                    android:text="查看订单"
+                    />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_75CEE1">#75CEE1</color>
+    <color name="color_79000000">#79000000</color>
+    <color name="white">#ffffff</color>
+    <string name="app_name">CalendarView</string>
+    <declare-styleable name="CalendarView">
+        <!--是否显示农历-->
+        <attr format="boolean" name="show_lunar"/>
+        <!--是否显示上月和下月-->
+        <attr format="boolean" name="show_last_next"/>
+        <!--是否显示节假日-->
+        <attr format="boolean" name="show_holiday"/>
+        <!--是否显示节气-->
+        <attr format="boolean" name="show_term"/>
+        <!--阳历的日期颜色-->
+        <attr format="color" name="solar_color"/>
+        <!--阳历的日期尺寸-->
+        <attr format="integer" name="solar_size"/>
+        <!--农历的日期颜色-->
+        <attr format="color" name="lunar_color"/>
+        <!--农历的日期尺寸-->
+        <attr format="integer" name="lunar_size"/>
+        <!--节日文字颜色-->
+        <attr format="color" name="holiday_color"/>
+        <!--选中的日期文字颜色-->
+        <attr format="color" name="choose_color"/>
+        <!--选中的日期背景-->
+        <attr format="reference" name="day_bg"/>
+        <!--单选时切换月份，是否选中上次的日期-->
+        <attr format="boolean" name="switch_choose"/>
+        <!--设置单选、多选-->
+        <attr format="enum" name="choose_type">
+            <enum name="single" value="0"/>
+            <enum name="multi" value="1"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="WeekView">
+        <!--周的表示形式（x.x.x.x.x.x.x）-->
+        <attr format="string" name="week_str"/>
+        <!--周的文字颜色-->
+        <attr format="color" name="week_color"/>
+        <!--周的文字大小-->
+        <attr format="integer" name="week_size"/>
+    </declare-styleable>
+</resources>

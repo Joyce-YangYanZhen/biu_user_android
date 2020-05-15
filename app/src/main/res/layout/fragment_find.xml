@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/m70"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/m20">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/tv_location"
+                android:drawableLeft="@drawable/dingwei"
+                android:drawablePadding="@dimen/m6"
+                android:textSize="@dimen/sp15"
+                android:textColor="@color/contents_text"
+                android:layout_marginLeft="@dimen/m20"
+                    android:text="上海市"/>
+        <ImageView
+                android:layout_width="@dimen/m15"
+                android:layout_height="@dimen/m15"
+                android:src="@drawable/tv_right"
+                android:layout_marginLeft="@dimen/m5"/>
+        <LinearLayout
+                android:id="@+id/ll_search"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/m55"
+                android:orientation="horizontal"
+                android:background="@drawable/sousuo_bg"
+                android:layout_marginRight="@dimen/m11"
+                android:layout_marginLeft="@dimen/m10"
+                android:gravity="center">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="搜索"
+                        android:textSize="@dimen/sp15"
+                        android:textColor="@color/color_79000000"/>
+            <ImageView
+                    android:layout_width="@dimen/m15"
+                    android:layout_height="@dimen/m15"
+                    android:src="@drawable/sousuo"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/m40">
+        <RelativeLayout
+                android:id="@+id/rl_private"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="right">
+
+            <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="私教"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/top_heiziti"
+                    android:textSize="@dimen/sp20"/>
+
+            <LinearLayout
+                    android:id="@+id/lin1"
+                    android:orientation="horizontal"
+                    android:layout_width="@dimen/m40"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="3dp"
+                    android:visibility="invisible"
+                    android:background="@color/btn_text_color" />
+        </RelativeLayout>
+        <RelativeLayout
+                android:id="@+id/rl_changguan"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="场馆"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/top_heiziti"
+                    android:textSize="@dimen/sp20" />
+
+            <LinearLayout
+                    android:id="@+id/lin2"
+                    android:orientation="horizontal"
+                    android:layout_width="@dimen/m40"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="3dp"
+                    android:visibility="invisible"
+                    android:background="@color/btn_text_color" />
+        </RelativeLayout>
+        <RelativeLayout
+                android:id="@+id/rl_team"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="left">
+
+            <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="团课"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/top_heiziti"
+                    android:textSize="@dimen/sp20" />
+
+            <LinearLayout
+                    android:id="@+id/lin3"
+                    android:orientation="horizontal"
+                    android:layout_width="@dimen/m40"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="3dp"
+                    android:visibility="invisible"
+                    android:background="@color/btn_text_color" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+</LinearLayout>

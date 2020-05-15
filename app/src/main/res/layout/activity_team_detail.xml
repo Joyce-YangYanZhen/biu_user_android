@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activity.changguan.ChaungguanDetailActivity">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="@dimen/m64">
+        <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="28dp"
+                android:layout_height="@dimen/m18"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/m15"
+                android:layout_marginLeft="@dimen/m20"
+                android:src="@drawable/back"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/team_details"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/m10"
+                android:textSize="@dimen/sp20"
+                android:textColor="@color/top_heiziti"/>
+
+        <ImageView
+                android:id="@+id/share_btn"
+                android:layout_width="@dimen/m25"
+                android:layout_height="@dimen/m25"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/m15"
+                android:layout_marginRight="@dimen/m20"
+                android:src="@drawable/share_icon"/>
+    </RelativeLayout>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/m10"
+            android:scrollbars="none">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="@dimen/m10"
+                android:paddingBottom="@dimen/m8"
+                android:orientation="vertical">
+
+            <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/m200">
+
+                <com.ms.banner.Banner
+                        android:id="@+id/banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/m200"
+                        app:delay_time="2000"
+                        app:is_auto_play="true"
+                        app:is_loop="true"/>
+
+            </FrameLayout>
+            <www.linwg.org.lib.LCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:shadowStartAlpha="10"
+                    app:cornerRadius="@dimen/m8"
+                    app:shadowSize="@dimen/m2"
+                    android:paddingTop="@dimen/m5">
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/m5"
+                        android:layout_marginBottom="@dimen/m5"
+                        android:background="@drawable/shape_btn_bg_white">
+
+                    <TextView
+                            android:id="@+id/tv_team_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="场馆名称"
+                            android:textSize="@dimen/sp15"
+                            android:textColor="@color/contents_text"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="@dimen/m20"
+                            />
+
+                    <TextView
+                            android:id="@+id/tv_cg_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_team_name"
+                            android:hint="场馆名称"
+                            android:layout_marginTop="@dimen/m10"
+                            android:layout_marginLeft="@dimen/m20"
+                            android:layout_alignParentLeft="true"
+                            android:layout_toLeftOf="@+id/tv_work_time"
+                            android:textColor="@color/color_6D7278"
+                            android:textSize="@dimen/sp13"
+                            />
+
+                    <TextView
+                            android:id="@+id/tv_work_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_team_name"
+                            android:layout_alignParentRight="true"
+                            android:hint="营业时间 10：30-22：30"
+                            android:gravity="right"
+                            android:layout_marginTop="@dimen/m10"
+                            android:layout_marginRight="@dimen/m20"
+                            android:textColor="@color/color_6D7278"
+                            android:textSize="@dimen/sp13"
+                            />
+
+                    <TextView
+                            android:id="@+id/tv_location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_cg_name"
+                            android:hint="杭州市xxx区xxx路22号"
+                            android:layout_marginLeft="@dimen/m20"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginTop="@dimen/m15"
+                            android:drawableLeft="@drawable/dizhi_dw"
+                            android:drawablePadding="@dimen/m10"
+                            android:textColor="@color/color_6D7278"
+                            android:textSize="@dimen/sp13"
+                            android:layout_toLeftOf="@+id/tv_toPhone"
+                            />
+
+                    <TextView
+                            android:id="@+id/tv_toPhone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_cg_name"
+                            android:layout_alignParentRight="true"
+                            android:text="咨询场馆"
+                            android:drawablePadding="@dimen/m10"
+                            android:drawableLeft="@drawable/kefu"
+                            android:textColor="@color/color_6D7278"
+                            android:textSize="@dimen/sp13"
+                            android:layout_marginTop="@dimen/m15"
+                            android:layout_marginRight="@dimen/m20"
+                            />
+                </RelativeLayout>
+            </www.linwg.org.lib.LCardView>
+
+            <www.linwg.org.lib.LCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:shadowStartAlpha="10"
+                    app:cornerRadius="@dimen/m8"
+                    app:shadowSize="@dimen/m2"
+                    android:paddingTop="@dimen/m5">
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                    <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/m10"
+                            android:layout_marginLeft="@dimen/m15">
+
+                        <ImageView
+                                android:id="@+id/iv_private_logo"
+                                android:layout_width="@dimen/m60"
+                                android:layout_height="@dimen/m60"
+                                android:src="@color/color_bg_grey"/>
+                        <TextView
+                                android:layout_width="@dimen/m60"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tv_private_name"
+                                android:text="jams bond"
+                                android:textSize="@dimen/sp13"
+                                android:gravity="center"
+                                android:textColor="@color/color_4A4A4A"
+                                android:layout_below="@+id/iv_private_logo"
+                                android:layout_alignParentLeft="true"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:minHeight="@dimen/m80"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/m10">
+
+                        <TextView
+                                android:id="@+id/tv_fenshu"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="9.5分"
+                                android:layout_marginRight="@dimen/m30"
+                                android:textColor="@color/btn_text_color"
+                                android:layout_alignParentRight="true"
+                                android:textSize="@dimen/sp13"/>
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tv_private_time"
+                                android:layout_marginLeft="@dimen/m18"
+                                android:text="累计服务时长：231 h"
+                                android:textColor="@color/color_4A4A4A"
+                                android:layout_marginBottom="@dimen/m8"
+                                android:maxLines="1"
+                                android:textSize="@dimen/sp12"
+                                android:layout_alignParentLeft="true"/>
+
+
+                        <com.noplugins.keepfit.userplatform.util.ui.ZFlowLayout
+                                android:id="@+id/fl_private_skill"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tv_private_time"
+                                android:layout_alignParentLeft="true"
+                                android:orientation="vertical" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </www.linwg.org.lib.LCardView>
+
+            <www.linwg.org.lib.LCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:shadowStartAlpha="10"
+                    app:cornerRadius="@dimen/m8"
+                    app:shadowSize="@dimen/m2"
+                    android:paddingTop="@dimen/m5">
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/m27"
+                            android:text="课程介绍"
+                            android:textColor="@color/contents_text"
+                            android:textSize="@dimen/sp15"
+                            android:layout_marginTop="@dimen/m15"
+                            android:gravity="center"
+                            android:layout_marginLeft="@dimen/m20"/>
+
+                    <TextView
+                            android:id="@+id/tv_class_duction"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                          android:textColor="@color/color_6D7278"
+                            android:textSize="@dimen/sp13"
+                            android:gravity="left"
+                            android:layout_marginTop="@dimen/m8"
+                            android:layout_marginLeft="@dimen/m20"
+                            android:layout_marginRight="@dimen/m20"/>
+                    <TextView
+                            android:layout_width="@dimen/m72"
+                            android:layout_height="@dimen/m27"
+                            android:text="适合人群："
+                            android:textColor="@color/color_6D7278"
+                            android:textSize="@dimen/sp15"
+                            android:layout_marginTop="@dimen/m15"
+                            android:gravity="center_vertical|left"
+                            android:paddingLeft="@dimen/m5"
+                            android:background="@drawable/shape_btn_bg_gray"
+                            android:layout_marginLeft="@dimen/m20"/>
+
+                    <TextView
+                            android:id="@+id/tv_class_mans"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="喜欢运动的年轻人"
+                            android:textColor="@color/color_6D7278"
+                            android:textSize="@dimen/sp13"
+                            android:gravity="left"
+                            android:layout_marginTop="@dimen/m8"
+                            android:layout_marginLeft="@dimen/m20"
+                            android:layout_marginRight="@dimen/m20"/>
+                    <TextView
+                            android:layout_width="@dimen/m72"
+                            android:layout_height="@dimen/m27"
+                            android:text="注意事项："
+                            android:textColor="@color/color_6D7278"
+                            android:textSize="@dimen/sp15"
+                            android:layout_marginTop="@dimen/m15"
+                            android:gravity="center_vertical|left"
+                            android:paddingLeft="@dimen/m5"
+                            android:background="@drawable/shape_btn_bg_gray"
+                            android:layout_marginLeft="@dimen/m20"/>
+
+                    <TextView
+                            android:id="@+id/tv_class_tips"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="训练前，摄入充足的热量和水分很重要哦～"
+                            android:textColor="@color/color_6D7278"
+                            android:textSize="@dimen/sp13"
+                            android:gravity="left"
+                            android:layout_marginTop="@dimen/m8"
+                            android:layout_marginLeft="@dimen/m20"
+                            android:layout_marginRight="@dimen/m20"
+                            android:layout_marginBottom="@dimen/m10"
+                            android:paddingTop="@dimen/m10"/>
+                </LinearLayout>
+            </www.linwg.org.lib.LCardView>
+
+            <FrameLayout
+                    android:id="@+id/pay_btn"
+                    android:layout_width="@dimen/m209"
+                    android:layout_height="@dimen/m50"
+                    android:layout_below="@+id/center"
+                    android:visibility="visible"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/m10"
+                    android:background="@drawable/shape_btn_bg_40"
+                    android:layout_marginBottom="@dimen/m20"
+                    android:gravity="center">
+
+                <TextView
+                        android:id="@+id/tv_class_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|left"
+                        android:layout_marginLeft="@dimen/m40"
+                        android:text="¥123"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/m18" />
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+                        android:text="@string/tv_Pay"
+                        android:textColor="@color/white"
+                        android:layout_marginRight="@dimen/m40"
+                        android:textSize="@dimen/m18" />
+
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

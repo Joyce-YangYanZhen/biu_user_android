@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/m64"
+            android:background="@color/white">
+            <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="28dp"
+                android:layout_height="@dimen/m18"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/m20"
+                android:layout_marginBottom="@dimen/m15"
+                android:src="@drawable/back"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/m10"
+                android:text="场馆私教"
+                android:textColor="@color/top_heiziti"
+                android:textSize="@dimen/sp20"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/m21"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/m27"
+                android:layout_marginLeft="@dimen/m21"
+                android:layout_weight="2"
+                android:background="@drawable/shape_btn_bg_gray">
+
+                <TextView
+                    android:id="@+id/private_class"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/m27"
+                    android:layout_marginLeft="@dimen/m12"
+                    android:gravity="start|center_vertical"
+                    android:text="课程类型"
+                    android:textColor="@color/color_6D7278"
+                    android:textSize="@dimen/sp15"/>
+
+                <ImageView
+                    android:layout_width="@dimen/m14"
+                    android:layout_height="@dimen/m8"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginRight="@dimen/m12"
+                    android:src="@drawable/xiala_1"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/m27"
+                android:layout_marginLeft="@dimen/m10"
+                android:layout_weight="2"
+                android:background="@drawable/shape_btn_bg_gray">
+
+                <TextView
+                    android:id="@+id/private_year"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/m27"
+                    android:layout_marginLeft="@dimen/m12"
+                    android:gravity="start|center_vertical"
+                    android:text="从业年限"
+                    android:textColor="@color/color_6D7278"
+                    android:textSize="@dimen/sp15"/>
+
+                <ImageView
+                    android:layout_width="@dimen/m14"
+                    android:layout_height="@dimen/m8"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginRight="@dimen/m12"
+                    android:src="@drawable/xiala_1"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/m27"
+                android:layout_marginLeft="@dimen/m10"
+                android:layout_marginRight="@dimen/m22"
+                android:layout_weight="1.5"
+                android:background="@drawable/shape_btn_bg_gray">
+                <TextView
+                    android:id="@+id/private_sex"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/m27"
+                    android:layout_marginLeft="@dimen/m12"
+                    android:gravity="start|center_vertical"
+                    android:text="性别"
+                    android:textColor="@color/color_6D7278"
+                    android:textSize="@dimen/sp15"/>
+
+                <ImageView
+                    android:layout_width="@dimen/m14"
+                    android:layout_height="@dimen/m8"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginRight="@dimen/m12"
+                    android:src="@drawable/xiala_1"/>
+            </FrameLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_private_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/m20"
+            android:layout_marginTop="@dimen/m10"
+            android:text="共0位私教"
+            android:textColor="@color/contents_text"
+            android:textSize="@dimen/sp15"/>
+
+        <com.andview.refreshview.XRefreshView
+            android:id="@+id/xrefreshview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rv_bg">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </com.andview.refreshview.XRefreshView>
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/iv_to_top"
+        android:layout_width="@dimen/m18"
+        android:layout_height="@dimen/m21"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="@dimen/m16"
+        android:layout_marginBottom="@dimen/m5"
+        android:src="@drawable/to_top"/>
+</FrameLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:gravity="center_horizontal"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="353dp"
+            android:background="@drawable/select_biaoqing_bg"
+            android:layout_height="125dp">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv176"
+                    android:layout_marginTop="19dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="@dimen/sp13"
+                    android:textColor="@color/color_6D7278"
+                    />
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/m10"
+                android:layout_marginLeft="68dp"
+                android:layout_marginRight="68dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:id="@+id/xiaolian1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="@dimen/m25"
+                    android:src="@drawable/xiaolian1"
+                    />
+
+            <ImageView
+                    android:id="@+id/xiaolian2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="@dimen/m25"
+                    android:src="@drawable/xiaolian2"
+                    />
+
+            <ImageView
+                    android:id="@+id/xiaolian3"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="@dimen/m25"
+                    android:src="@drawable/xiaolian3"
+                    />
+
+            <ImageView
+                    android:id="@+id/xiaolian4"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="@dimen/m25"
+                    android:src="@drawable/xiaolian4"
+                    />
+
+            <ImageView
+                    android:id="@+id/xiaolian5"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="@dimen/m25"
+                    android:src="@drawable/xiaolian5"
+                    />
+        </LinearLayout>
+
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv177"
+                android:layout_marginTop="@dimen/m17"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/sp12"
+                android:textColor="@color/color_6D7278"
+                />
+    </LinearLayout>
+
+</LinearLayout>

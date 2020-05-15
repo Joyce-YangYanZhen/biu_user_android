@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/m21"
+                android:layout_marginBottom="@dimen/m11">
+
+            <FrameLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/m27"
+                    android:layout_marginLeft="@dimen/m15"
+                    android:background="@drawable/shape_btn_bg_gray">
+
+                <TextView
+                        android:id="@+id/private_class"
+                        android:text="训练目标"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/m27"
+                        android:textColor="@color/color_6D7278"
+                        android:gravity="start|center_vertical"
+                        android:layout_marginLeft="@dimen/m8"
+                        android:textSize="@dimen/sp15"/>
+
+                <ImageView
+                        android:layout_width="@dimen/m14"
+                        android:layout_height="@dimen/m8"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginRight="@dimen/m8"
+                        android:src="@drawable/xiala_1" />
+            </FrameLayout>
+
+            <FrameLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/m27"
+                    android:layout_marginLeft="@dimen/m10"
+                    android:background="@drawable/shape_btn_bg_gray">
+
+                <TextView
+                        android:id="@+id/private_year"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/m27"
+                        android:text="课程类型"
+                        android:textColor="@color/color_6D7278"
+                        android:gravity="start|center_vertical"
+                        android:layout_marginLeft="@dimen/m8"
+                        android:textSize="@dimen/sp15"/>
+
+                <ImageView
+                        android:layout_width="@dimen/m14"
+                        android:layout_height="@dimen/m8"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginRight="@dimen/m8"
+                        android:src="@drawable/xiala_1" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/m27"
+                    android:layout_marginLeft="@dimen/m10"
+                    android:layout_marginRight="@dimen/m15"
+                    android:background="@drawable/shape_btn_bg_gray">
+                <TextView
+                        android:id="@+id/private_sex"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/m27"
+                        android:text="训练强度"
+                        android:textColor="@color/color_6D7278"
+                        android:gravity="start|center_vertical"
+                        android:layout_marginLeft="@dimen/m8"
+                        android:textSize="@dimen/sp15"/>
+
+                <ImageView
+                        android:layout_width="@dimen/m14"
+                        android:layout_height="@dimen/m8"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginRight="@dimen/m8"
+                        android:src="@drawable/xiala_1" />
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <www.linwg.org.lib.LCardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/m56"
+                app:leftTopCornerRadius="@dimen/m10"
+                app:rightBottomCornerRadius="@dimen/dp_10"
+                app:leftBottomCornerRadius="@dimen/m10"
+                app:rightTopCornerRadius="@dimen/m10"
+                app:leftShadowWidth="0dp"
+                app:rightShadowWidth="0dp">
+           <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:gravity="center">
+               <androidx.recyclerview.widget.RecyclerView
+                       android:id="@+id/rv_date_select"
+                       android:layout_gravity="center_vertical"
+                       android:layout_width="match_parent"
+                       android:layout_height="38dp"/>
+           </LinearLayout>
+        </www.linwg.org.lib.LCardView>
+
+
+       <FrameLayout
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/m40">
+           <TextView
+                   android:id="@+id/tv_private_num"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="共0位私教"
+                   android:textColor="@color/contents_text"
+                   android:textSize="@dimen/sp15"
+                   android:layout_marginTop="@dimen/m10"
+                   android:layout_marginLeft="@dimen/m20"/>
+           <FrameLayout
+                   android:layout_width="@dimen/m120"
+                   android:layout_height="@dimen/m27"
+                   android:layout_marginLeft="@dimen/m10"
+                   android:layout_marginRight="@dimen/m20"
+                   android:layout_gravity="right|center_vertical"
+                   android:background="@drawable/shape_btn_bg_gray">
+
+               <TextView
+                       android:id="@+id/team_time"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:text="时间"
+                       android:textColor="@color/color_6D7278"
+                       android:gravity="start|center_vertical"
+                       android:layout_marginLeft="@dimen/m12"
+                       android:textSize="@dimen/sp15"/>
+
+               <ImageView
+                       android:layout_width="@dimen/m14"
+                       android:layout_height="@dimen/m8"
+                       android:layout_gravity="end|center_vertical"
+                       android:layout_marginRight="@dimen/m12"
+                       android:src="@drawable/xiala_1" />
+
+           </FrameLayout>
+       </FrameLayout>
+
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                android:id="@+id/xrefreshview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    </LinearLayout>
+    <ImageView
+            android:id="@+id/iv_to_top"
+            android:layout_width="@dimen/m18"
+            android:layout_height="@dimen/m21"
+            android:src="@drawable/to_top"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="@dimen/m16"
+            android:layout_marginBottom="@dimen/m5"/>
+</FrameLayout>

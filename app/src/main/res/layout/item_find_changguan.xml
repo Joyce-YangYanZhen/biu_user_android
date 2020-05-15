@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:roundiv="http://schemas.android.com/tools"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:id="@+id/ll_cg_item"
+              android:paddingTop="@dimen/m5"
+              android:paddingBottom="@dimen/m5">
+
+    <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/m10"
+            android:layout_marginLeft="@dimen/m15">
+
+        <com.noplugins.keepfit.userplatform.util.ui.CustomRoundAngleImageView
+                android:id="@+id/iv_changguan_logo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                roundiv:radius="@dimen/m10"
+                android:src="@color/color_bg_grey"/>
+
+        <TextView
+                android:id="@+id/pingfen_tv"
+                android:layout_width="@dimen/m30"
+                android:layout_height="@dimen/m15"
+                android:text="0分"
+                android:textSize="@dimen/sp10"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@drawable/shape_btn_bg_longgray"/>
+    </FrameLayout>
+
+    <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:minHeight="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/m10">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_changguan_name"
+                android:text="场馆名称"
+                android:textSize="@dimen/sp15"
+                android:textColor="@color/contents_text"
+                android:layout_marginLeft="@dimen/m18"
+                android:layout_toLeftOf="@+id/ll_icon"
+                android:layout_alignParentLeft="true"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_changguan_address"
+                android:layout_marginLeft="@dimen/m18"
+                android:text="场馆地址"
+                android:textColor="@color/color_6D7278"
+                android:layout_marginTop="@dimen/m10"
+                android:layout_marginBottom="@dimen/m8"
+                android:layout_below="@+id/tv_changguan_name"
+                android:layout_alignParentLeft="true"/>
+
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_chakan_num"
+                android:drawableLeft="@drawable/chakan"
+                android:layout_below="@+id/tv_changguan_address"
+                android:text="1000"
+                android:textColor="@color/color_6D7278"
+                android:layout_marginLeft="@dimen/m18"
+                android:layout_alignParentLeft="true"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_juli"
+                android:drawableLeft="@drawable/juli"
+                android:layout_below="@+id/tv_changguan_address"
+                android:text="1.2km"
+                android:textColor="@color/color_6D7278"
+                android:layout_marginLeft="@dimen/m20"
+                android:layout_toRightOf="@+id/tv_chakan_num"/>
+
+        <TextView
+                android:id="@+id/tv_select"
+                android:layout_width="@dimen/m60"
+                android:visibility="gone"
+                android:layout_height="@dimen/m30"
+                android:background="@drawable/shape_btn_bg_40"
+                android:layout_marginTop="@dimen/m20"
+                android:layout_marginRight="@dimen/m20"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/sp13"
+                android:textColor="@color/white"
+                android:text="@string/select"
+                android:gravity="center"
+                android:layout_below="@+id/ll_icon"/>
+       <LinearLayout
+               android:id="@+id/ll_price"
+               android:visibility="visible"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginRight="@dimen/m20"
+               android:layout_alignParentRight="true"
+               android:layout_below="@+id/tv_changguan_address"
+               android:orientation="horizontal">
+           <TextView
+                   android:id="@+id/tv_price"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="¥19"
+                   android:textColor="@color/color_bg_black"
+                   android:textSize="@dimen/sp20"/>
+           <TextView
+                   android:layout_below="@+id/ll_icon"
+                   android:id="@+id/tv_start"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="起"
+                   android:textColor="@color/color_6D7278"
+                   android:textSize="@dimen/sp15"/>
+       </LinearLayout>
+        <LinearLayout
+                android:id="@+id/ll_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/m20"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/m20">
+
+            <ImageView
+                    android:id="@+id/iv_zuji"
+                    android:layout_width="@dimen/m20"
+                    android:layout_height="@dimen/m20"
+                    android:src="@drawable/zuji"
+                    android:visibility="gone"
+                    />
+            <ImageView
+                    android:id="@+id/iv_shoucang"
+                    android:layout_width="@dimen/m20"
+                    android:layout_height="@dimen/m20"
+                    android:src="@drawable/collect"
+                    android:visibility="gone"
+                    android:layout_marginLeft="@dimen/m10"
+                    />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

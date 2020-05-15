@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.noplugins.keepfit.userplatform"
+    android:targetSandboxVersion="2"
+    android:versionCode="9"
+    android:versionName="1.0.4" >
+
+    <uses-sdk
+        android:minSdkVersion="23"
+        android:targetSdkVersion="29" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.autofocus" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" /> <!-- 用于开启 debug 版本的应用在6.0 系统上 层叠窗口权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" /> <!-- 添加角标权限 -->
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" /> <!-- Required -->
+    <permission
+        android:name="com.noplugins.keepfit.userplatform.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" /> <!-- Required  一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="com.noplugins.keepfit.userplatform.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" /> <!-- 高德定位权限 -->
+    <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 用于获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> <!-- 用于访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 用于申请调用A-GPS模块 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" /> <!-- 用于申请获取蓝牙信息进行室内定位 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" /> <!-- 微信支付权限 -->
+    <uses-permission android:name="android.permission." /> <!-- bugly -->
+    <uses-permission android:name="android.permission.READ_LOGS" /> <!-- 银联的 -->
+    <uses-permission android:name="android.permission.NFC" />
+
+    <uses-feature android:name="android.hardware.nfc.hce" />
+
+    <uses-permission android:name="org.simalliance.openmobileapi.SMARTCARD" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name="com.noplugins.keepfit.userplatform.base.MyApplication"
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:usesCleartextTraffic="true" >
+        <activity android:name="com.noplugins.keepfit.userplatform.mvc_demo.MVC_LoginActivity" >
+        </activity>
+        <activity android:name="com.noplugins.keepfit.userplatform.activity.info.XieYiActivity" >
+        </activity>
+        <activity android:name="com.noplugins.keepfit.userplatform.activity.changguan.ChangguanPrivateListActivity" >
+        </activity>
+        <activity android:name="com.noplugins.keepfit.userplatform.activity.info.InformationNameUpdateActivity" >
+        </activity>
+        <activity android:name="com.noplugins.keepfit.userplatform.activity.info.InformationActivity" >
+        </activity>
+        <activity android:name="com.noplugins.keepfit.userplatform.activity.info.SettingActivity" >
+        </activity>
+        <activity android:name="com.noplugins.keepfit.userplatform.activity.team.TeamToPrivateActivity" >
+        </activity>
+        <activity android:name="com.noplugins.keepfit.userplatform.activity.team.TeamDetailActivity" >
+        </activity>
+        <activity android:name="com.noplugins.keepfit.userplatform.activity.teahcher.PrivateClassActivity" >
+        </activity>
+        <activity android:name="com.noplugins.keepfit.userplatform.activity.teahcher.PrivateToCgDetailActivity" >
+        </activity>
+        <activity android:name="com.noplugins.keepfit.userplatform.activity.info.VerificationPhoneActivity" >
+        </activity>
+        <activity android:name="com.noplugins.keepfit.userplatform.activity.info.UpdatePhoneActivity" >
+        </activity>
+        <activity android:name="com.noplugins.keepfit.userplatform.activity.info.SettingPwdActivity" >
+        </activity>
+        <activity android:name="com.noplugins.keepfit.userplatform.activity.info.AccountSecurityActivity" >
+        </activity>
+        <activity
+            android:name="com.noplugins.keepfit.userplatform.activity.dialog.SelectChangguanActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/dialogstyle" >
+        </activity>
+        <activity android:name="com.noplugins.keepfit.userplatform.activity.AdviceActivity" >
+        </activity>
+        <activity android:name="com.noplugins.keepfit.userplatform.activity.CollectionActivity" >
+        </activity>
+        <activity android:name="com.noplugins.keepfit.userplatform.activity.OederDetailActivity" >
+        </activity>
+        <activity android:name="com.noplugins.keepfit.userplatform.activity.MessageDetailActivity" >
+        </activity>
+        <activity android:name="com.noplugins.keepfit.userplatform.activity.teahcher.PrivateDetailActivity" >
+        </activity>
+        <activity
+            android:name="com.noplugins.keepfit.userplatform.activity.OrderManageActivity"
+            android:hardwareAccelerated="true" >
+        </activity>
+        <activity
+            android:name="com.noplugins.keepfit.userplatform.activity.BodyResouceActivity"
+            android:hardwareAccelerated="true" >
+        </activity>
+        <activity android:name="com.noplugins.keepfit.userplatform.activity.SearchActivity" >
+        </activity>
+        <activity
+            android:name="com.noplugins.keepfit.userplatform.activity.DailyTravelDetailActivity"
+            android:hardwareAccelerated="false" >
+        </activity>
+        <activity android:name="com.noplugins.keepfit.userplatform.activity.TravelActivity" >
+        </activity>
+        <activity
+            android:name="com.noplugins.keepfit.userplatform.activity.CheckCodeActivity"
+            android:hardwareAccelerated="false" >
+        </activity>
+        <activity android:name="com.noplugins.keepfit.userplatform.activity.changguan.ChaungguanDetailActivity" >
+        </activity>
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="f6c5c161b7e9378879e0d7a901eb868f" />
+
+        <service android:name="com.amap.api.location.APSService" />
+
+        <activity android:name="com.noplugins.keepfit.userplatform.activity.PasswordSettingActivity" >
+        </activity>
+        <activity android:name="com.noplugins.keepfit.userplatform.activity.SplashActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.noplugins.keepfit.userplatform.activity.WelcomeGuideActivity" >
+        </activity>
+        <activity
+            android:name="com.noplugins.keepfit.userplatform.MainActivity"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask" >
+
+            <!-- 可选：动态圈选需要单独添加这个intent-filter 区块 -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="jiguang"
+                    android:scheme="jiguang-1160ccf17f0ca2749e307caf" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.noplugins.keepfit.userplatform.activity.LoginActivity" />
+        <activity android:name="com.noplugins.keepfit.userplatform.activity.InformationSettingActivity" >
+        </activity>
+        <activity android:name="com.noplugins.keepfit.userplatform.activity.QuanyiConfirmActivity" >
+        </activity>
+        <activity android:name="com.noplugins.keepfit.userplatform.activity.GaodeTestActivity" />
+        <activity
+            android:name="com.noplugins.keepfit.userplatform.activity.dialog.SelectLocationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/dialogstyle" >
+        </activity>
+        <activity android:name="com.noplugins.keepfit.userplatform.activity.changguan.BillActivity" />
+        <activity
+            android:name="com.noplugins.keepfit.userplatform.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="你的appid" />
+            </intent-filter>
+        </activity> <!-- 存储权限 authorities="你的包名+fileprovider" -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.noplugins.keepfit.userplatform.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths_public" />
+        </provider> <!-- 极光 -->
+        <!-- Required SDK 核心功能 -->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:exported="false"
+            android:process=":pushcore" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service> <!-- since 3.0.9 Required SDK 核心功能 -->
+        <provider
+            android:name="cn.jpush.android.service.DataProvider"
+            android:authorities="com.noplugins.keepfit.userplatform.DataProvider"
+            android:exported="false"
+            android:process=":pushcore" /> <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+
+                <category android:name="com.noplugins.keepfit.userplatform" />
+            </intent-filter>
+        </service> <!-- since 3.1.0 Required SDK 核心功能 -->
+        <provider
+            android:name="cn.jpush.android.service.DownloadProvider"
+            android:authorities="com.noplugins.keepfit.userplatform.DownloadProvider"
+            android:exported="true" /> <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter android:priority="1000" >
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" /> <!-- Required  显示通知栏 -->
+                <category android:name="com.noplugins.keepfit.userplatform" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver> <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.AlarmReceiver"
+            android:exported="false" /> <!-- User defined.  For test only  用户自定义的广播接收器 -->
+        <receiver
+            android:name="com.noplugins.keepfit.userplatform.jpush.MyReceiver"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /> <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.noplugins.keepfit.userplatform" />
+            </intent-filter>
+        </receiver> <!-- User defined.  For test only  用户自定义接收消息器,3.0.7开始支持,目前新tag/alias接口设置结果会在该广播接收器对应的方法中回调 -->
+        <!-- since 3.3.0 接收JPush相关事件 -->
+        <receiver android:name="com.noplugins.keepfit.userplatform.jpush.PushMessageReceiver" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.RECEIVE_MESSAGE" />
+
+                <category android:name="com.noplugins.keepfit.userplatform" />
+            </intent-filter>
+        </receiver> <!-- since 3.3.0 Required SDK 核心功能 -->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <!-- User defined.  For test only 继承自cn.jpush.android.service.JCommonService -->
+        <service
+            android:name="com.noplugins.keepfit.userplatform.jpush.PushService"
+            android:process=":pushcore" >
+            <intent-filter>
+                <action android:name="cn.jiguang.user.service.action" />
+            </intent-filter>
+        </service> <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.noplugins.keepfit.userplatform" />
+            </intent-filter>
+        </activity> <!-- since 3.3.0 Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.service.JNotifyActivity"
+            android:exported="true"
+            android:taskAffinity="jpush.custom"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.JNotifyActivity" />
+
+                <category android:name="com.noplugins.keepfit.userplatform" />
+            </intent-filter>
+        </activity> <!-- Rich push 核心功能 since 2.0.6 -->
+        <activity
+            android:name="cn.jpush.android.ui.PopWinActivity"
+            android:exported="false"
+            android:theme="@style/MyDialogStyle" />
+        <activity
+            android:name="com.noplugins.keepfit.userplatform.activity.dialog.SelectLocationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/dialogstyle" >
+        </activity>
+        <activity android:name="com.noplugins.keepfit.userplatform.activity.info.ProductAdviceActivity" />
+        <activity android:name="com.noplugins.keepfit.userplatform.activity.info.AboutActivity" />
+        <activity android:name="com.noplugins.keepfit.userplatform.activity.info.UpdatePasswordActivity" /> <!-- QQ -->
+        <activity android:name="com.tencent.tauth.AuthActivity" >
+        </activity>
+        <activity android:name="com.tencent.connect.common.AssistActivity" >
+        </activity> <!-- 新浪微博 -->
+        <activity
+            android:name="com.umeng.socialize.media.WBShareCallBackActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.sina.weibo.sdk.web.WeiboSdkWebActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.sina.weibo.sdk.share.WbShareTransActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- 微信 -->
+        <activity
+            android:name="com.noplugins.keepfit.userplatform.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="default_developer" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="1160ccf17f0ca2749e307caf" />
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5d9c56903fc1955345000b1e" >
+        </meta-data> <!-- 可选： 动态圈选圈选必要的Activity -->
+        <activity
+            android:name="cn.jiguang.analytics.android.view.BuryWebActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" /> <!-- 银联支付 -->
+        <uses-library
+            android:name="org.simalliance.openmobileapi"
+            android:required="false" />
+
+        <activity
+            android:name="com.unionpay.uppay.PayActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.unionpay.UPPayWapActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.huantansheng.easyphotos.ui.EasyPhotosActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/EasyPhotosTheme" />
+        <activity
+            android:name="com.huantansheng.easyphotos.ui.PreviewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/EasyPhotosFullscreenTheme" />
+        <activity
+            android:name="com.huantansheng.easyphotos.ui.PuzzleActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/EasyPhotosTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.huantansheng.easyphotos.ui.PuzzleSelectorActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/EasyPhotosTheme" />
+        <activity
+            android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"
+            android:exported="false"
+            android:label=""
+            android:theme="@style/EasyPermissions.Transparent" />
+        <activity
+            android:name="com.allenliu.versionchecklib.core.VersionDialogActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/versionCheckLibvtransparentTheme" />
+
+        <provider
+            android:name="com.allenliu.versionchecklib.core.VersionFileProvider"
+            android:authorities="com.noplugins.keepfit.userplatform.versionProvider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/versionchecklib_file_paths" />
+        </provider>
+
+        <activity
+            android:name="com.allenliu.versionchecklib.core.PermissionDialogActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/versionCheckLibvtransparentTheme" />
+
+        <service
+            android:name="com.allenliu.versionchecklib.core.MyService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.allenliu.versionchecklib.v2.ui.VersionService"
+            android:exported="false"
+            android:priority="1000" />
+
+        <activity
+            android:name="com.allenliu.versionchecklib.v2.ui.UIActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/versionCheckLibvtransparentTheme" />
+        <activity
+            android:name="com.allenliu.versionchecklib.v2.ui.DownloadingActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/versionCheckLibvtransparentTheme" />
+        <activity
+            android:name="com.allenliu.versionchecklib.v2.ui.DownloadFailedActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/versionCheckLibvtransparentTheme" />
+
+        <meta-data
+            android:name="android.notch_support"
+            android:value="true" /> <!-- <meta-data android:name="android.max_aspect" android:value="2.4" /> -->
+        <!-- PermissonActivity -->
+        <activity
+            android:name="com.lxj.xpermission.XPermission$PermissionActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider
+            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+            android:authorities="com.noplugins.keepfit.userplatform.lifecycle-process"
+            android:exported="false"
+            android:multiprocess="true" />
+
+        <activity
+            android:name="com.yanzhenjie.permission.PermissionActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="standard"
+            android:theme="@style/permission_PermissionActivity"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.app.PayResultActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="true"
+            android:launchMode="singleInstance"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.app.AlipayResultActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:background="@drawable/jinjie_bg"
+                android:layout_marginTop="@dimen/m8"
+                android:layout_height="@dimen/m140">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/m20"
+            android:layout_marginTop="@dimen/m15"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:layout_width="4dp"
+                        android:src="@drawable/fenge_icon"
+                        android:layout_height="@dimen/m14"/>
+
+                <EditText
+                        android:id="@+id/tizhilv_edit"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:text="0"
+                        android:paddingLeft="@dimen/m5"
+                        android:maxLength="4"
+                        android:singleLine="true"
+                        android:inputType="number|numberDecimal"
+                        android:gravity="left|center_vertical"
+                        android:textStyle="bold"
+                        android:enabled="false"
+                        android:textColor="@color/top_heiziti"
+                />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv181"
+                        android:textSize="@dimen/m10"
+                        android:gravity="center"
+                        android:textColor="@color/color_6D7278"
+                />
+            </LinearLayout>
+
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="133dp"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:layout_width="4dp"
+                        android:src="@drawable/fenge_icon"
+                        android:layout_height="@dimen/m14"/>
+
+                <EditText
+                        android:id="@+id/yaotunbi_edit"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:text="0"
+                        android:paddingLeft="@dimen/m5"
+                        android:maxLength="4"
+                        android:singleLine="true"
+                        android:inputType="number|numberDecimal"
+                        android:gravity="left|center_vertical"
+                        android:textStyle="bold"
+                        android:enabled="false"
+                        android:textColor="@color/top_heiziti"
+                />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv183"
+                        android:textSize="@dimen/m10"
+                        android:gravity="center"
+                        android:textColor="@color/color_6D7278"
+                />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/m17"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:layout_width="4dp"
+                        android:src="@drawable/fenge_icon"
+                        android:layout_height="@dimen/m14"/>
+
+                <EditText
+                        android:id="@+id/bmi_edit"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:text="0"
+                        android:paddingLeft="@dimen/m5"
+                        android:maxLength="4"
+                        android:singleLine="true"
+                        android:enabled="false"
+                        android:inputType="number|numberDecimal"
+                        android:gravity="left|center_vertical"
+                        android:textStyle="bold"
+                        android:textColor="@color/top_heiziti"
+                />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv182"
+                        android:textSize="@dimen/m10"
+                        android:gravity="center"
+                        android:textColor="@color/color_6D7278"
+                />
+            </LinearLayout>
+
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="133dp"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:layout_width="4dp"
+                        android:src="@drawable/fenge_icon"
+                        android:layout_height="@dimen/m14"/>
+
+                <EditText
+                        android:id="@+id/jichudaxie_edit"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:text="0"
+                        android:paddingLeft="@dimen/m5"
+                        android:maxLength="4"
+                        android:singleLine="true"
+                        android:inputType="number|numberDecimal"
+                        android:gravity="left|center_vertical"
+                        android:textStyle="bold"
+                        android:enabled="false"
+                        android:textColor="@color/top_heiziti"
+                />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv198"
+                        android:textSize="@dimen/m10"
+                        android:gravity="center"
+                        android:textColor="@color/color_6D7278"
+                />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ImageView
+            android:id="@+id/update_jinjie_btn"
+            android:layout_width="@dimen/m20"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/bianji"
+            android:layout_marginRight="@dimen/m20"
+            android:layout_marginBottom="@dimen/m15"
+            android:layout_height="@dimen/m20"/>
+    <TextView
+            android:id="@+id/save_jinjie_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/m20"
+            android:layout_marginBottom="@dimen/m15"
+            android:visibility="gone"
+            android:textColor="@color/top_heiziti"
+            android:textSize="@dimen/sp18"
+            android:text="@string/tv199"/>
+</RelativeLayout>

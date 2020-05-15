@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+            android:layout_centerInParent="true"
+            android:layout_width="@dimen/m321"
+            android:background="@drawable/to_phone"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_height="@dimen/m150">
+
+       <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/m23"
+               android:gravity="center_vertical"
+               android:layout_marginTop="@dimen/m20"
+               android:layout_marginLeft="@dimen/m20"
+               android:layout_marginRight="@dimen/m20"
+               android:orientation="horizontal">
+           <ImageView
+                   android:layout_width="@dimen/m15"
+                   android:src="@drawable/yiwen"
+
+                   android:layout_height="@dimen/m15"/>
+            <TextView
+                    android:layout_width="0dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/m5"
+                    android:layout_weight="1"
+                    android:layout_height="@dimen/m21"
+                    android:textColor="@color/color_4A4A4A"
+                    android:text="时间说明"
+                    android:textSize="@dimen/sp15"
+                    />
+
+           <ImageView
+                   android:id="@+id/iv_cha"
+                   android:layout_width="@dimen/m17"
+                   android:layout_height="@dimen/m17"
+                   android:src="@drawable/cha"
+                   />
+       </LinearLayout>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_4A4A4A"
+                android:text="选择的时间不满1小时按1小时计算"
+                android:layout_marginRight="@dimen/m40"
+                android:layout_marginLeft="@dimen/m40"
+                android:layout_marginTop="@dimen/m33"
+                android:textSize="@dimen/sp15"/>
+
+        <TextView
+                android:id="@+id/tv_tips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/m40"
+                android:layout_marginLeft="@dimen/m40"
+                android:textColor="@color/color_4A4A4A"
+                android:text=" 高峰时间段为：19:00-21:00"
+                android:textSize="@dimen/sp15"/>
+
+    </LinearLayout>
+</RelativeLayout>

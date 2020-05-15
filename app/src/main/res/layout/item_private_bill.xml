@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/m100">
+    <ImageView
+            android:id="@+id/iv_private_logo"
+            android:layout_width="@dimen/m78"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/m20"
+            android:layout_height="@dimen/m78"/>
+
+    <TextView
+            android:id="@+id/tv_private_class"
+            android:layout_width="@dimen/m72"
+            android:layout_height="@dimen/m22"
+            android:textColor="@color/color_00BABB"
+            android:background="@drawable/shape_btn_bg_50bg"
+            android:text="私教课程"
+            android:textSize="@dimen/sp13"
+            android:layout_marginLeft="@dimen/m16"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/m15"
+            android:layout_toRightOf="@+id/iv_private_logo"/>
+
+    <TextView
+            android:id="@+id/tv_private_name"
+            android:layout_width="@dimen/m78"
+            android:layout_height="@dimen/m22"
+            tools:text="json Ben"
+            android:textSize="@dimen/sp13"
+            android:textColor="@color/color_6D7278"
+            android:layout_marginLeft="@dimen/m16"
+            android:gravity="center_vertical|left"
+            android:layout_marginTop="@dimen/m15"
+            android:layout_toRightOf="@+id/tv_private_class"/>
+
+    <TextView
+            android:id="@+id/tv_class_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="课程名称"
+            android:textColor="@color/contents_text"
+            android:textSize="@dimen/sp13"
+            android:layout_marginLeft="@dimen/m16"
+            android:gravity="left"
+            android:layout_marginTop="@dimen/m12"
+            android:layout_below="@+id/tv_private_class"
+            android:layout_toLeftOf="@+id/tv_class_price"
+            android:layout_toRightOf="@+id/iv_private_logo"/>
+
+    <TextView
+            android:id="@+id/tv_class_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="¥0"
+            android:textColor="@color/contents_text"
+            android:textSize="@dimen/sp15"
+            android:gravity="right"
+            android:layout_marginTop="@dimen/m12"
+            android:layout_below="@+id/tv_private_class"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/m20"/>
+
+    <TextView
+            android:id="@+id/tv_private_time"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/m18"
+            tools:text="2019-10-11 12:12:12"
+            android:textColor="@color/color_4A4A4A"
+            android:textSize="@dimen/sp13"
+            android:gravity="center"
+            android:layout_below="@+id/tv_class_name"
+            android:layout_marginLeft="@dimen/m15"
+            android:layout_marginTop="@dimen/m10"
+            android:layout_toRightOf="@+id/iv_private_logo"/>
+</RelativeLayout>

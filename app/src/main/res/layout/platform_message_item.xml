@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:background="@color/white"
+                android:layout_height="88dp">
+
+    <RelativeLayout
+            android:id="@+id/rel_left"
+            android:layout_width="45dp"
+            android:layout_marginLeft="@dimen/m20"
+            android:layout_marginTop="@dimen/m5"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_vertical"
+            android:layout_height="45dp">
+
+        <ImageView
+                android:id="@+id/left_icon"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:src="@drawable/quanyi_icon"
+                />
+
+        <ImageView
+                android:id="@+id/red_icon"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/red_icon"
+                android:layout_width="@dimen/m11"
+                android:layout_height="@dimen/m11"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+            android:layout_toRightOf="@+id/rel_left"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/m5"
+            android:background="@color/white"
+            android:layout_height="match_parent">
+
+
+        <TextView
+                android:id="@+id/content_tv"
+                android:layout_marginLeft="@dimen/m8"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:layout_marginRight="@dimen/m20"
+                android:text="亲爱的Jasmyn，廖生云教练已经创建了瑜伽课程的训练日志，快去看一下吧～"
+                android:textColor="@color/top_heiziti"
+                android:textSize="@dimen/sp13"/>
+
+
+        <TextView
+                android:id="@+id/tv_date_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="今天 18:33"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/m20"
+                android:textColor="@color/color_bbbbbb"
+                android:textSize="@dimen/sp12"/>
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+            android:layout_marginLeft="66dp"
+            android:layout_width="match_parent"
+            android:background="@color/btn_text_gray"
+            android:layout_alignParentBottom="true"
+            android:layout_height="1px"/>
+</RelativeLayout>

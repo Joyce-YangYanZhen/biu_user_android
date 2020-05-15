@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="@color/white"
+              android:layout_marginTop="@dimen/m10"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/m19"
+            android:layout_height="match_parent">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/m14"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:id="@+id/time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="今天 9：30"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/m20"
+                    android:textColor="@color/top_heiziti"
+                    android:textSize="@dimen/sp13"
+                    />
+
+            <TextView
+                    android:id="@+id/zhufu_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   tools:text="待支付"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/m20"
+                    android:visibility="visible"
+                    android:textColor="@color/color_6D7278"
+                    android:textSize="@dimen/sp13"
+                    />
+        </RelativeLayout>
+
+        <LinearLayout
+                android:id="@+id/changguan_detail_tv"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/m10"
+                android:layout_marginLeft="@dimen/m20"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:id="@+id/changuan_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="一二三健生馆"
+                    android:textColor="@color/top_heiziti"
+                    android:textSize="@dimen/sp13"
+                    />
+
+            <ImageView
+                    android:layout_width="@dimen/m13"
+                    android:layout_marginLeft="@dimen/m5"
+                    android:src="@drawable/next"
+                    android:visibility="gone"
+                    android:layout_height="@dimen/m13"/>
+        </LinearLayout>
+
+
+        <com.noplugins.keepfit.userplatform.util.ui.MyListView
+                android:id="@+id/listview"
+                android:layout_marginLeft="@dimen/m20"
+                android:layout_marginTop="@dimen/m12"
+                android:layout_width="match_parent"
+                android:divider="@null"
+                android:listSelector="@android:color/transparent"
+                android:dividerHeight="@dimen/m10"
+                android:layout_height="wrap_content"/>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/color_6D7278"
+                android:layout_marginLeft="@dimen/m65"
+                android:layout_marginTop="@dimen/m10"
+                android:visibility="gone"
+                android:layout_height="1px"/>
+
+        <LinearLayout
+                android:id="@+id/huodong_layout"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginRight="@dimen/m18"
+                android:layout_marginTop="@dimen/m10"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                android:layout_marginLeft="@dimen/m20"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="活动优惠"
+                    android:textSize="@dimen/sp15"
+                    android:textColor="@color/top_heiziti"/>
+
+            <TextView
+                    android:id="@+id/tv_huodong_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginLeft="@dimen/m10"
+                    tools:text="￥45"
+                    android:textSize="@dimen/sp15"
+                    android:textColor="@color/top_heiziti"
+                    />
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/gongji_layout"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginRight="@dimen/m18"
+                android:layout_marginLeft="@dimen/m20"
+                android:layout_marginTop="@dimen/m10"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv206"
+                    android:textSize="@dimen/sp15"
+                    android:textColor="@color/top_heiziti"/>
+
+            <TextView
+                    android:id="@+id/gongji_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginLeft="@dimen/m10"
+                    tools:text="￥45"
+                    android:textSize="@dimen/sp15"
+                    android:textColor="@color/top_heiziti"
+                    />
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:id="@+id/quanyi_hgongji_layout"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true">
+
+            <RelativeLayout
+                    android:id="@+id/quanyi_layout"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/m23"
+                    android:layout_marginRight="@dimen/m21"
+                    android:layout_marginTop="@dimen/m10"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv207"
+                        android:layout_alignParentLeft="true"
+                        android:textColor="@color/color_6D7278"
+                        android:textSize="@dimen/sp13"
+                        />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-￥732"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/color_6D7278"
+                        android:textSize="@dimen/sp15"
+                        />
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/m23"
+                    android:layout_marginRight="@dimen/m21"
+                    android:layout_marginTop="@dimen/m10"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv208"
+                        android:layout_alignParentLeft="true"
+                        android:textColor="@color/color_6D7278"
+                        android:textSize="@dimen/sp13"
+                        />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="￥0"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/top_heiziti"
+                        android:textSize="@dimen/sp15"
+                        />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/daifukuan_layout"
+                android:layout_width="wrap_content"
+                android:layout_gravity="right"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/m10"
+                android:visibility="visible"
+                android:layout_marginRight="@dimen/m20"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                    android:id="@+id/quxiao_btn1"
+                    android:layout_width="@dimen/m82"
+                    android:background="@drawable/quxiao_bg"
+                    android:gravity="center"
+                    android:layout_height="@dimen/m30">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_6D7278"
+                        android:textSize="@dimen/sp13"
+                        android:text="@string/tv205"
+                        />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/ll_pay"
+                    android:layout_width="@dimen/m104"
+                    android:background="@drawable/daojishi_bg"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/m20"
+                    android:layout_height="@dimen/m30">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp13"
+                        android:text="付款"
+                        />
+
+                <com.noplugins.keepfit.userplatform.util.ui.TimeRunTextView
+                        android:id="@+id/run_time"
+                        android:layout_marginLeft="@dimen/m2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp13"
+                        />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/chognxin_buy_layout"
+                android:layout_width="wrap_content"
+                android:layout_gravity="right"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/m10"
+                android:layout_marginRight="@dimen/m20"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                    android:layout_width="@dimen/m82"
+                    android:background="@drawable/return_buy_icon"
+                    android:gravity="center"
+                    android:layout_height="@dimen/m30">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp13"
+                        android:text="@string/tv209"
+                        />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/m21"
+            android:orientation="horizontal">
+            <FrameLayout
+                android:layout_width="@dimen/m119"
+                android:layout_height="@dimen/m27"
+                android:layout_marginLeft="@dimen/m34"
+                android:layout_marginRight="@dimen/m15"
+                android:background="@drawable/shape_btn_bg_gray">
+
+                <TextView
+                    android:id="@+id/main_occupation"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/m27"
+                    android:gravity="center"
+                    android:text="场馆类型"
+                    android:textColor="@color/color_6D7278"
+                    android:textSize="@dimen/sp15"/>
+
+                <ImageView
+                    android:layout_width="@dimen/m14"
+                    android:layout_height="@dimen/m8"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginRight="@dimen/m12"
+                    android:contentDescription="@string/ms_app_name"
+                    android:src="@drawable/xiala_1"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_pingfen"
+
+                android:layout_width="74dp"
+                android:layout_height="@dimen/m27"
+                android:layout_marginRight="@dimen/m15"
+                android:background="@drawable/shape_btn_bg_gray"
+                android:gravity="center"
+                android:text="评分"
+                android:textColor="@color/color_6D7278"
+                android:textSize="@dimen/sp15"/>
+            <TextView
+                android:id="@+id/tv_yongchi"
+                android:layout_width="74dp"
+                android:layout_height="@dimen/m27"
+                android:layout_marginRight="@dimen/m34"
+                android:background="@drawable/shape_btn_bg_gray"
+                android:gravity="center"
+                android:text="泳池"
+                android:textColor="@color/color_6D7278"
+                android:textSize="@dimen/sp15"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_cg_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/m20"
+            android:layout_marginTop="@dimen/m10"
+            android:text="共0家场馆"
+            android:textColor="@color/contents_text"
+            android:textSize="@dimen/sp15"/>
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/xrefreshview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_list"
+                android:layout_width="match_parent" android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/iv_to_top"
+        android:layout_width="@dimen/m18"
+        android:layout_height="@dimen/m21"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="@dimen/m16"
+        android:layout_marginBottom="@dimen/m5"
+        android:src="@drawable/to_top"/>
+</FrameLayout>
